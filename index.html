@@ -3,27 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Labocontrol — Redirection</title>
+  <title>Labocontrol — Laboratoire d'étude, d'essais et de contrôle</title>
+  <meta http-equiv="refresh" content="0; url=design_files/terrain/">
+  <link rel="canonical" href="design_files/terrain/">
+  <script>
+    window.location.replace("design_files/terrain/");
+  </script>
   <style>
     html,body{margin:0;padding:0;height:100%;background:#0E0A08;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#FFFFFF;}
-    main{display:flex;height:100%;align-items:center;justify-content:center;flex-direction:column;gap:20px;text-align:center;padding:24px;box-sizing:border-box;}
-    .btn{display:inline-flex;align-items:center;gap:8px;background:#D01919;color:#FFFFFF;padding:14px 28px;font-weight:600;font-size:15px;text-decoration:none;border-radius:8px;box-shadow:0 4px 16px rgba(208,25,25,0.4);transition:all .2s;}
-    .btn:hover{background:#B51515;transform:translateY(-1px);}
-    p{color:rgba(255,255,255,0.7);font-size:14px;max-width:420px;margin:0;line-height:1.5;}
+    main{display:flex;height:100%;align-items:center;justify-content:center;flex-direction:column;gap:16px;text-align:center;padding:24px;box-sizing:border-box;}
+    a{color:#D01919;font-weight:600;text-decoration:none;}
   </style>
 </head>
 <body>
   <main>
-    <img src="design_files/assets/logo-light.png" alt="Labocontrol" height="56">
-    <p>Redirection vers le site officiel de Labocontrol...</p>
-    <a href="design_files/terrain/index.html" class="btn">Entrer sur le site →</a>
+    <p>Redirection vers <a href="design_files/terrain/">Labocontrol</a>...</p>
   </main>
-  <script>
-    try {
-      if (window.location.protocol !== 'file:' || window.self === window.top) {
-        window.location.replace('design_files/terrain/index.html');
-      }
-    } catch(e) {}
-  </script>
 </body>
 </html>
