@@ -10,6 +10,9 @@
     }
     if (floatingCall) {
       if (window.scrollY > 260) floatingCall.classList.add('is-visible');
+      const hero = document.querySelector('.hero');
+      const threshold = hero ? (hero.offsetHeight - 80) : 320;
+      if (window.scrollY > threshold) floatingCall.classList.add('is-visible');
       else floatingCall.classList.remove('is-visible');
     }
   };
@@ -127,6 +130,17 @@
   // Close on ESC
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') document.body.classList.remove('menu-open');
+  });
+
+  // ------------- Prevent self-navigation errors in frames / file: URLs -------------
+  document.querySelectorAll('a[href="index.html"], a[href="./index.html"], a[href="./"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      if (currentFile === 'index.html' || currentFile === '') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
   });
 
   // ------------- Hero headline rotator -------------
