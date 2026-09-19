@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Études d'impact — Services — Labocontrol</title>
+<meta name="description" content="Mesurer l'empreinte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+.sd-hero{ padding: 160px var(--pad) 80px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow: hidden;}
+.sd-hero__grid{ position: relative; z-index: 1; display: grid; grid-template-columns: 1.5fr 1fr; gap: 64px; align-items: end;}
+.sd-hero__crumb{ display: flex; gap: 8px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; margin-bottom: 24px;}
+.sd-hero__crumb a{ color: var(--blue); border-bottom: 1px solid transparent; transition: border-color .2s;}
+.sd-hero__crumb a:hover{ border-color: currentColor;}
+.sd-hero h1{ font-family: var(--serif); font-size: clamp(48px, 7vw, 116px); line-height: 0.95; letter-spacing: -0.03em; margin: 0;}
+.sd-hero h1 em{ font-style: italic; color: var(--accent); font-weight: 300;}
+.sd-hero__facts{ display: grid; gap: 16px;}
+.sd-fact{ padding: 16px 0; border-top: 1px solid var(--line);}
+.sd-fact__lbl{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase;}
+.sd-fact__val{ font-family: var(--serif); font-size: 22px; margin-top: 4px; line-height: 1.2;}
+.sd-fact__val strong{ color: var(--blue);}
+.sd-intro{ padding: 100px var(--pad); display: grid; grid-template-columns: 1fr 2fr; gap: 64px; border-bottom: 1px solid var(--line);}
+.sd-intro__idx{ font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: var(--blue); text-transform: uppercase;}
+.sd-intro__text{ font-family: var(--serif); font-size: clamp(24px, 2.8vw, 36px); line-height: 1.3; letter-spacing: -0.01em;}
+.sd-intro__text em{ font-style: italic; color: var(--accent); font-weight: 300;}
+.sd-norms{ padding: 100px var(--pad); background: var(--bg-2); border-bottom: 1px solid var(--line);}
+.sd-norms__head{ margin-bottom: 40px; display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap;}
+.sd-norms__head h2{ font-family: var(--serif); font-size: clamp(32px, 4vw, 56px); line-height: 1; margin: 0; letter-spacing: -0.02em;}
+.sd-norms__head h2 em{ font-style: italic; color: var(--accent); font-weight: 300;}
+.sd-norm-grid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;}
+.sd-norm{ background: var(--bg); border: 1px solid var(--line); padding: 24px; transition: border-color .3s, transform .3s;}
+.sd-norm:hover{ border-color: var(--accent); transform: translateY(-2px);}
+.sd-norm__code{ font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase;}
+.sd-norm__title{ font-family: var(--serif); font-size: 20px; margin: 8px 0 12px; line-height: 1.2;}
+.sd-norm__desc{ color: var(--ink-2); font-size: 14px; line-height: 1.6;}
+@media(max-width: 700px){ .sd-norm-grid{ grid-template-columns: 1fr;} }
+.sd-process{ padding: 100px var(--pad);}
+.sd-process__grid{ display: grid; grid-template-columns: 1fr 3fr; gap: 64px;}
+.sd-process__steps{ display: grid; gap: 0; border-top: 1px solid var(--line);}
+.sd-step{ display: grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 32px 0; border-bottom: 1px solid var(--line);}
+.sd-step__num{ font-family: var(--serif); font-size: 44px; color: var(--accent); line-height: 1; font-weight: 300;}
+.sd-step h3{ font-family: var(--serif); font-size: 26px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.01em;}
+.sd-step p{ color: var(--ink-2); line-height: 1.6; max-width: 620px;}
+.sd-step__meta{ margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;}
+.sd-step__meta span{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; padding: 4px 8px; border: 1px solid var(--line); color: var(--blue); text-transform: uppercase;}
+.sd-deliverable{ padding: 100px var(--pad); background: var(--ink); color: var(--white);}
+.sd-deliverable .section__index{ color: var(--accent-2);}
+.sd-deliverable h2{ font-family: var(--serif); font-size: clamp(32px, 4vw, 56px); line-height: 1; margin: 12px 0 24px; letter-spacing: -0.02em; color: var(--white);}
+.sd-deliverable h2 em{ font-style: italic; color: var(--accent-2); font-weight: 300;}
+.sd-deliverable__grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;}
+.sd-deliverable__desc{ color: rgba(255,255,255,0.75); font-size: 16px; line-height: 1.7;}
+.sd-doc-mock{ position: relative; aspect-ratio: 3/4; background: #FBF8F2; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.5); padding: 32px; color: var(--ink); overflow: hidden;}
+.sd-doc-mock::before{ content:''; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--accent);}
+.sd-doc-mock__meta{ display: flex; justify-content: space-between; font-family: var(--mono); font-size: 8px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; padding-top: 8px;}
+.sd-doc-mock__title{ font-family: var(--serif); font-size: 22px; line-height: 1.15; margin: 24px 0 16px; letter-spacing: -0.01em;}
+.sd-doc-mock__project{ font-family: var(--mono); font-size: 9px; letter-spacing: 0.14em; color: var(--blue); text-transform: uppercase;}
+.sd-doc-mock__body{ margin-top: 24px; display: grid; gap: 8px;}
+.sd-doc-mock__body span{ display: block; height: 6px; background: var(--line);}
+.sd-doc-mock__body span:nth-child(1){ width: 90%;}
+.sd-doc-mock__body span:nth-child(2){ width: 78%;}
+.sd-doc-mock__body span:nth-child(3){ width: 88%;}
+.sd-doc-mock__body span:nth-child(4){ width: 65%;}
+.sd-doc-mock__body span:nth-child(5){ width: 92%;}
+.sd-doc-mock__body span:nth-child(6){ width: 40%;}
+.sd-doc-mock__chart{ margin-top: 24px; padding: 16px; background: var(--bg-2); display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; align-items: end; height: 100px;}
+.sd-doc-mock__chart span{ background: var(--blue); display: block;}
+.sd-doc-mock__foot{ position: absolute; bottom: 24px; left: 32px; right: 32px; display: flex; justify-content: space-between; font-family: var(--mono); font-size: 8px; letter-spacing: 0.14em; color: var(--muted);}
+.sd-more{ padding: 100px var(--pad); border-bottom: 1px solid var(--line);}
+.sd-more__grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line);}
+.sd-more-card{ padding: 24px 16px 24px 0; border-right: 1px solid var(--line);}
+.sd-more-card:last-child{ border-right: 0;}
+.sd-more-card a{ display: block; padding-top: 16px;}
+.sd-more-card__n{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--blue); text-transform: uppercase;}
+.sd-more-card__t{ font-family: var(--serif); font-size: 22px; margin: 8px 0; line-height: 1.15;}
+.sd-more-card__go{ font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase;}
+@media(max-width: 1000px){ .sd-hero__grid, .sd-intro, .sd-process__grid, .sd-deliverable__grid{ grid-template-columns: 1fr;} .sd-more__grid{ grid-template-columns: repeat(2, 1fr);} .sd-more-card:nth-child(2){ border-right: 0;}}
+
+@media(max-width: 600px){
+  .sd-hero { padding: 120px var(--pad) 60px; }
+  .sd-norms, .sd-process, .sd-deliverable, .sd-more { padding: 60px var(--pad); }
+  .sd-step { grid-template-columns: 1fr; gap: 12px; }
+  .sd-step__num { font-size: 32px; }
+  .sd-more__grid { grid-template-columns: 1fr; }
+  .sd-more-card { border-right: 0 !important; border-bottom: 1px solid var(--line); padding: 20px 0; }
+  .sd-more-card:last-child { border-bottom: 0; }
+}
+</style>
+
+</head>
+<body data-screen-label="Service — Études d'impact">
+<nav class="nav">
+  <a href="../index.html" class="nav__logo"><img src="../../assets/logo-original.png" alt="Labocontrol"></a>
+  <div class="nav__links">
+    <a href="../index.html">Accueil</a>
+        <div class="nav__item--dropdown">
+      <a href="../services.html">Services <span class="arrow">▾</span></a>
+      <div class="nav__dropdown">
+        <a href="../services.html" class="drop-all"><span>Vue d'ensemble des 5 disciplines</span> <span class="drop-tag">Tout voir →</span></a>
+        <a href="geotechnique.html"><span>01 · Études géotechniques</span> <span class="drop-tag">Sondages</span></a>
+        <a href="expertises.html"><span>02 · Expertises &amp; diagnostic</span> <span class="drop-tag">Structure</span></a>
+        <a href="beton.html"><span>03 · Essais sur béton frais</span> <span class="drop-tag">NF EN 12350</span></a>
+        <a href="granulats.html"><span>04 · Contrôle des granulats</span> <span class="drop-tag">NF EN 933</span></a>
+        <a href="impact.html"><span>05 · Environnement &amp; Eau</span> <span class="drop-tag">ISO 17025</span></a>
+      </div>
+    </div>
+    <a href="../projets.html">Projets</a>
+    <a href="../demarche.html">Démarche</a>
+    <a href="../about.html">À propos</a>
+    <a href="../agences.html">Agences</a>
+    <a href="../carrieres.html">Carrières</a>
+  </div>
+  <a href="../contact.html" class="nav__cta">Demander un devis <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h8m-3-3 3 3-3 3"/></svg></a>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer__header">
+    <span class="badge--blue">LABOCONTROL · LAB/03</span>
+    <button class="mobile-drawer__close" aria-label="Fermer le menu">✕</button>
+  </div>
+    <nav class="mobile-drawer__nav">
+    <a href="../index.html"><span>/01</span>Accueil</a>
+        <a href="../services.html"><span>/02</span>Services</a>
+        <div class="mobile-drawer__sub">
+      <a href="../services.html" class="drop-all"><span>Vue d'ensemble des 5 disciplines</span> <span class="drop-tag">Tout voir →</span></a>
+      <a href="geotechnique.html"><span>01 · Études géotechniques</span> <span class="drop-tag">Sondages</span></a>
+      <a href="expertises.html"><span>02 · Expertises &amp; diagnostic</span> <span class="drop-tag">Structure</span></a>
+      <a href="beton.html"><span>03 · Essais sur béton frais</span> <span class="drop-tag">NF EN 12350</span></a>
+      <a href="granulats.html"><span>04 · Contrôle des granulats</span> <span class="drop-tag">NF EN 933</span></a>
+      <a href="impact.html"><span>05 · Environnement &amp; Eau</span> <span class="drop-tag">ISO 17025</span></a>
+    </div>
+    <a href="../projets.html"><span>/03</span>Projets</a>
+    <a href="../demarche.html"><span>/04</span>Démarche</a>
+    <a href="../about.html"><span>/05</span>À propos</a>
+    <a href="../clients.html"><span>/06</span>Clients</a>
+    <a href="../agences.html"><span>/07</span>Agences</a>
+    <a href="../carrieres.html"><span>/08</span>Carrières</a>
+    <a href="../contact.html"><span>/09</span>Contact</a>
+  </nav>
+  <div class="mobile-drawer__cta">
+    <a href="../contact.html" class="btn btn--primary">Demander un devis →</a>
+  </div>
+  <div class="mobile-drawer__footer">
+    <a href="tel:+212522338501">+212 5 22 33 85 01</a>
+    <a href="mailto:casa@labocontrol.ma">casa@labocontrol.ma</a>
+    <span>LAB/03 · Qualifié par l'État</span>
+  </div>
+</div>
+
+
+<header class="sd-hero">
+  <svg class="page-hero__lines" viewBox="0 0 1600 400" preserveAspectRatio="none">
+    <path d="M-100 300 C 300 260, 700 340, 1100 280 S 1700 200, 1900 300"/>
+    <path d="M-100 240 C 300 200, 700 280, 1100 220 S 1700 140, 1900 240"/>
+    <path d="M-100 180 C 300 140, 700 220, 1100 160 S 1700  80, 1900 180"/>
+  </svg>
+  <div class="sd-hero__grid">
+    <div>
+      <div class="sd-hero__crumb"><a href="../index.html">Accueil</a> ·     <div class="nav__item--dropdown">
+      <a href="../services.html">Services <span class="arrow">▾</span></a>
+      <div class="nav__dropdown">
+        <a href="../services.html" class="drop-all"><span>Vue d'ensemble des 5 disciplines</span> <span class="drop-tag">Tout voir →</span></a>
+        <a href="geotechnique.html"><span>01 · Études géotechniques</span> <span class="drop-tag">Sondages</span></a>
+        <a href="expertises.html"><span>02 · Expertises &amp; diagnostic</span> <span class="drop-tag">Structure</span></a>
+        <a href="beton.html"><span>03 · Essais sur béton frais</span> <span class="drop-tag">NF EN 12350</span></a>
+        <a href="granulats.html"><span>04 · Contrôle des granulats</span> <span class="drop-tag">NF EN 933</span></a>
+        <a href="impact.html"><span>05 · Environnement &amp; Eau</span> <span class="drop-tag">ISO 17025</span></a>
+      </div>
+    </div> · <span>Études d'impact</span></div>
+      <div class="section__index" style="color: var(--blue);">/ SERVICE 05</div>
+      <h1>Études d'impact<br><em>Mesurer l'empreinte.</em></h1>
+    </div>
+    <div class="sd-hero__facts">
+      <div class="sd-fact"><div class="sd-fact__lbl">Norme principale</div><div class="sd-fact__val"><strong>Loi 12-03</strong></div></div>
+      <div class="sd-fact"><div class="sd-fact__lbl">Délai type</div><div class="sd-fact__val">3 à 6 mois</div></div>
+      <div class="sd-fact"><div class="sd-fact__lbl">Matériel dédié</div><div class="sd-fact__val">Équipe pluridisciplinaire dédiée</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="sd-intro">
+  <div>
+    <div class="sd-intro__idx">/ 05 · POURQUOI</div>
+  </div>
+  <p class="sd-intro__text">Chaque projet laisse une empreinte sur son environnement. Notre travail : la <em>mesurer</em>, la réduire, et la faire accepter par l'autorité compétente.</p>
+</section>
+
+<section class="sd-norms">
+  <div class="sd-norms__head">
+    <div>
+      <div class="section__index" style="color: var(--blue);">/ NORMES APPLICABLES</div>
+      <h2>Ce que <em>disent les normes.</em></h2>
+    </div>
+  </div>
+  <div class="sd-norm-grid">
+    
+    <div class="sd-norm">
+      <div class="sd-norm__code">Loi 12-03</div>
+      <h3 class="sd-norm__title">Études d'impact sur l'environnement</h3>
+      <p class="sd-norm__desc">Loi marocaine de référence — définit les projets soumis à EIE et la procédure d'acceptabilité.</p>
+    </div>
+    <div class="sd-norm">
+      <div class="sd-norm__code">Décret 2-04-563</div>
+      <h3 class="sd-norm__title">Attributions du CNEIE / CREIE</h3>
+      <p class="sd-norm__desc">Comités national et régionaux d'études d'impact — instances d'acceptabilité.</p>
+    </div>
+    <div class="sd-norm">
+      <div class="sd-norm__code">Loi 11-03</div>
+      <h3 class="sd-norm__title">Protection de l'environnement</h3>
+      <p class="sd-norm__desc">Loi cadre de protection et de mise en valeur de l'environnement au Maroc.</p>
+    </div>
+    <div class="sd-norm">
+      <div class="sd-norm__code">ISO 14001</div>
+      <h3 class="sd-norm__title">Systèmes de management environnemental</h3>
+      <p class="sd-norm__desc">Norme internationale pour la mise en place d'un système de management environnemental.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sd-process">
+  <div class="sd-process__grid">
+    <div>
+      <div class="section__index" style="color: var(--blue);">/ PROTOCOLE</div>
+      <h2 style="font-family: var(--serif); font-size: clamp(32px, 4vw, 56px); line-height: 1; margin: 12px 0 0; letter-spacing: -0.02em;">Comment on <em style="font-style: italic; color: var(--accent); font-weight: 300;">procède.</em></h2>
+    </div>
+    <div class="sd-process__steps">
+      
+      <div class="sd-step">
+        <div class="sd-step__num">/01</div>
+        <div>
+          <h3>Cadrage & état initial</h3>
+          <p>Analyse de la sensibilité du site : biodiversité, hydrologie, qualité de l'air, patrimoine, contexte socio-économique.</p>
+          <div class="sd-step__meta"><span>Faune</span><span>Hydro</span><span>Socio</span></div>
+        </div>
+      </div>
+      <div class="sd-step">
+        <div class="sd-step__num">/02</div>
+        <div>
+          <h3>Analyse des impacts</h3>
+          <p>Identification et évaluation des impacts (positifs et négatifs), directs et indirects, sur toutes les composantes environnementales.</p>
+          <div class="sd-step__meta"><span>Matrice</span><span>Direct</span><span>Indirect</span></div>
+        </div>
+      </div>
+      <div class="sd-step">
+        <div class="sd-step__num">/03</div>
+        <div>
+          <h3>Plan d'actions</h3>
+          <p>Mesures d'évitement, réduction et compensation (ERC). Plan de surveillance et de suivi environnemental (PSSE).</p>
+          <div class="sd-step__meta"><span>ERC</span><span>PSSE</span><span>Suivi</span></div>
+        </div>
+      </div>
+      <div class="sd-step">
+        <div class="sd-step__num">/04</div>
+        <div>
+          <h3>Assistance CNEIE / CREIE</h3>
+          <p>Rédaction du dossier d'EIE, présentation devant l'instance, réponses aux questions, obtention de l'acceptabilité.</p>
+          <div class="sd-step__meta"><span>Dossier</span><span>Instance</span><span>Acceptabilité</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sd-deliverable">
+  <div class="sd-deliverable__grid">
+    <div>
+      <div class="section__index">/ LIVRABLE</div>
+      <h2>Un rapport <em>signé.</em></h2>
+      <p class="sd-deliverable__desc">Dossier complet d'étude d'impact environnemental conforme à la loi 12-03 : rapport EIE, résumé non technique, plan d'actions ESS (Environnement, Social, Santé/Sécurité), plan de surveillance et de suivi. Assistance à la présentation devant le CNEIE ou le CREIE pour obtenir la décision d'acceptabilité environnementale.</p>
+      <a href="../contact.html" class="btn btn--primary" style="margin-top: 32px;">Demander un devis <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10m-4-4 4 4-4 4"/></svg></a>
+    </div>
+    <div class="sd-doc-mock" aria-hidden="true">
+      <div class="sd-doc-mock__meta"><span>LABOCONTROL · LAB/03</span><span>RÉF. LC-2026-5238</span></div>
+      <div class="sd-doc-mock__project">RAPPORT ÉTUDES D'IMPACT</div>
+      <h4 class="sd-doc-mock__title">Étude études d'impact<br>Projet client · Casablanca</h4>
+      <div class="sd-doc-mock__body"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="sd-doc-mock__chart">
+        <span style="height: 40%;"></span>
+        <span style="height: 65%;"></span>
+        <span style="height: 55%;"></span>
+        <span style="height: 80%;"></span>
+        <span style="height: 45%;"></span>
+        <span style="height: 90%;"></span>
+      </div>
+      <div class="sd-doc-mock__foot"><span>Ingénieur signataire</span><span>Page 12 / 48</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sd-more">
+  <div class="section__head">
+    <div><div class="section__index" style="color: var(--blue);">/ AUTRES SERVICES</div><h2 class="section__title">Nos <em>autres disciplines.</em></h2></div>
+  </div>
+  <div class="sd-more__grid">
+    
+    <div class="sd-more-card">
+      <div class="sd-more-card__n">/01</div>
+      <a href="geotechnique.html">
+        <h3 class="sd-more-card__t">Études géotechniques</h3>
+        <div class="sd-more-card__go">Découvrir →</div>
+      </a>
+    </div>
+    <div class="sd-more-card">
+      <div class="sd-more-card__n">/02</div>
+      <a href="expertises.html">
+        <h3 class="sd-more-card__t">Expertises</h3>
+        <div class="sd-more-card__go">Découvrir →</div>
+      </a>
+    </div>
+    <div class="sd-more-card">
+      <div class="sd-more-card__n">/03</div>
+      <a href="beton.html">
+        <h3 class="sd-more-card__t">Essais béton</h3>
+        <div class="sd-more-card__go">Découvrir →</div>
+      </a>
+    </div>
+    <div class="sd-more-card">
+      <div class="sd-more-card__n">/04</div>
+      <a href="granulats.html">
+        <h3 class="sd-more-card__t">Granulats</h3>
+        <div class="sd-more-card__go">Découvrir →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="../../assets/logo-light.png" alt="Labocontrol" style="height: 40px;">
+      <p>Laboratoire d'étude, d'essais et de contrôle — qualifié par l'État sous le numéro LAB/03 et accrédité NM ISO/CEI 17025. Casablanca · Fès · Marrakech · Tanger · El Jadida.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 3a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 8h5v10H3V8zm7 0h4.7v1.4h.1c.7-1.2 2.2-1.7 3.4-1.7 3.5 0 4.2 2.3 4.2 5.3V18h-5v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V18h-5V8z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M20 10a10 10 0 10-11.6 9.9v-7H5.9V10h2.5V7.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5H13c-1.3 0-1.7.8-1.7 1.6V10h2.9l-.5 2.9h-2.4v7A10 10 0 0020 10z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="15" height="15" rx="4"/><circle cx="10" cy="10" r="4"/><circle cx="14.5" cy="5.5" r="0.8" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M19.6 5.9c-.2-.9-.9-1.6-1.8-1.8C16.2 3.7 10 3.7 10 3.7s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C0 7.5 0 10 0 10s0 2.5.4 4.1c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.1.4-4.1s0-2.5-.4-4.1zM8 13V7l5.2 3L8 13z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="geotechnique.html">Géotechnique</a>
+      <a href="expertises.html">Expertises</a>
+      <a href="beton.html">Essais béton</a>
+      <a href="granulats.html">Granulats</a>
+      <a href="impact.html">Environnement &amp; Eau</a>
+    </div>
+    <div class="footer__col">
+      <h4>Société</h4>
+      <a href="../about.html">À propos</a>
+      <a href="../projets.html">Projets</a>
+      <a href="../demarche.html">Démarche qualité</a>
+      <a href="../clients.html">Clients</a>
+      <a href="../carrieres.html">Carrières</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:casa@labocontrol.ma">casa@labocontrol.ma</a>
+      <a href="tel:+212522338501">+212 5 22 33 85 01</a>
+      <a href="../agences.html">Nos 6 agences</a>
+      <a href="../contact.html">Formulaire de devis</a>
+    </div>
+    <div class="footer__col footer__col--wide">
+      <h4>Newsletter · trimestrielle</h4>
+      <p class="footer__nl">Recevez nos actualités, publications techniques et retours de chantier — quatre fois par an, jamais de spam.</p>
+      <form class="footer__nl-form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.querySelector('.msg').textContent='Merci ! On garde le contact.';">
+        <input type="email" placeholder="votre@email.ma" required>
+        <button type="submit" aria-label="S'inscrire"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10m-4-4 4 4-4 4"/></svg></button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 LABOCONTROL — TOUS DROITS RÉSERVÉS</span>
+    <span class="footer__legal">
+      <a href="../mentions-legales.html">Mentions légales</a>
+      <a href="../confidentialite.html">Confidentialité</a>
+    </span>
+    <span>QUALIFIÉ LAB/03 · ACCRÉDITÉ NM ISO/CEI 17025</span>
+  </div>
+</footer>
+<script src="../app.js"></script>
+
+<a href="tel:+212522338501" class="floating-call" aria-label="Appeler Labocontrol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 05 22 33 85 01</a>
+</body>
+</html>

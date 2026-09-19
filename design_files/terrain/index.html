@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labocontrol — Laboratoire d'étude, d'essais et de contrôle · LAB/03</title>
+<meta name="description" content="Labocontrol : laboratoire marocain d'étude, d'essais et de contrôle. Qualifié par l'État LAB/03. Sondages géotechniques, essais béton, granulats, expertises, études d'impact. 5 agences : Casablanca, Fès, Marrakech, Tanger, El Jadida.">
+<meta name="keywords" content="labocontrol, laboratoire, géotechnique, sondage, essais béton, granulats, étude d'impact, expertise, LAB/03, Maroc, Casablanca">
+<meta name="author" content="Labocontrol">
+<meta name="robots" content="index, follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Labocontrol — Le sol ne ment jamais.">
+<meta property="og:description" content="Laboratoire d'étude, d'essais et de contrôle. Qualifié LAB/03 par l'État. 27 ans d'expertise terrain au Maroc.">
+<meta property="og:image" content="../assets/hero-drill.jpg">
+<meta property="og:url" content="https://www.labocontrol.ma/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Labocontrol",
+  "url": "https://www.labocontrol.ma/",
+  "logo": "https://www.labocontrol.ma/assets/logo-original.png",
+  "description": "Laboratoire d'étude, d'essais et de contrôle. Qualifié par l'État sous le numéro LAB/03.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lot N°119 Zone Industrielle, Mediouna",
+    "addressLocality": "Casablanca",
+    "addressCountry": "MA"
+  },
+  "telephone": "+212 5 22 33 85 01",
+  "email": "contact@labocontrol.ma"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-screen-label="Terrain — Accueil">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav__logo" aria-label="Labocontrol accueil">
+    <img src="../assets/logo-original.png" alt="Labocontrol" class="logo-light">
+    <img src="../assets/logo-light.png" alt="Labocontrol" class="logo-dark">
+  </a>
+  <div class="nav__links">
+    <a href="index.html" class="active">Accueil</a>
+    <div class="nav__item--dropdown">
+      <a href="services.html">Services <span class="arrow">▾</span></a>
+      <div class="nav__dropdown">
+        <a href="services.html" class="drop-all"><span>Vue d'ensemble des 5 disciplines</span> <span class="drop-tag">Tout voir →</span></a>
+        <a href="services/geotechnique.html"><span>01 · Études géotechniques</span> <span class="drop-tag">Sondages</span></a>
+        <a href="services/expertises.html"><span>02 · Expertises &amp; diagnostic</span> <span class="drop-tag">Structure</span></a>
+        <a href="services/beton.html"><span>03 · Essais sur béton frais</span> <span class="drop-tag">NF EN 12350</span></a>
+        <a href="services/granulats.html"><span>04 · Contrôle des granulats</span> <span class="drop-tag">NF EN 933</span></a>
+        <a href="services/impact.html"><span>05 · Environnement &amp; Eau</span> <span class="drop-tag">ISO 17025</span></a>
+      </div>
+    </div>
+    <a href="projets.html">Projets</a>
+    <a href="demarche.html">Démarche</a>
+    <a href="about.html">À propos</a>
+    <a href="agences.html">Agences</a>
+    <a href="carrieres.html">Carrières</a>
+  </div>
+  <a href="contact.html" class="nav__cta">
+    Demander un devis
+    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h8m-3-3 3 3-3 3"/></svg>
+  </a>
+  <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" aria-hidden="true">
+  <div class="mobile-drawer__header">
+    <span class="badge--blue">LABOCONTROL · LAB/03</span>
+    <button class="mobile-drawer__close" aria-label="Fermer le menu">✕</button>
+  </div>
+  <nav class="mobile-drawer__nav">
+    <a href="index.html"><span>/01</span>Accueil</a>
+    <a href="services.html"><span>/02</span>Services</a>
+    <div class="mobile-drawer__sub">
+      <a href="services/geotechnique.html">01 · Géotechnique &amp; sondages</a>
+      <a href="services/expertises.html">02 · Expertises &amp; structures</a>
+      <a href="services/beton.html">03 · Essais sur béton frais</a>
+      <a href="services/granulats.html">04 · Contrôle des granulats</a>
+      <a href="services/impact.html">05 · Environnement &amp; Eau</a>
+        <div class="mobile-drawer__sub">
+      <a href="services.html" class="drop-all"><span>Vue d'ensemble des 5 disciplines</span> <span class="drop-tag">Tout voir →</span></a>
+      <a href="services/geotechnique.html"><span>01 · Études géotechniques</span> <span class="drop-tag">Sondages</span></a>
+      <a href="services/expertises.html"><span>02 · Expertises &amp; diagnostic</span> <span class="drop-tag">Structure</span></a>
+      <a href="services/beton.html"><span>03 · Essais sur béton frais</span> <span class="drop-tag">NF EN 12350</span></a>
+      <a href="services/granulats.html"><span>04 · Contrôle des granulats</span> <span class="drop-tag">NF EN 933</span></a>
+      <a href="services/impact.html"><span>05 · Environnement &amp; Eau</span> <span class="drop-tag">ISO 17025</span></a>
+    </div>
+    <a href="projets.html"><span>/03</span>Projets</a>
+    <a href="demarche.html"><span>/04</span>Démarche</a>
+    <a href="about.html"><span>/05</span>À propos</a>
+    <a href="clients.html"><span>/06</span>Clients</a>
+    <a href="agences.html"><span>/07</span>Agences</a>
+    <a href="carrieres.html"><span>/08</span>Carrières</a>
+    <a href="contact.html"><span>/09</span>Contact</a>
+  </nav>
+  <div class="mobile-drawer__cta">
+    <a href="contact.html" class="btn btn--primary">Demander un devis →</a>
+  </div>
+  <div class="mobile-drawer__footer">
+    <a href="tel:+212522338501">+212 5 22 33 85 01</a>
+    <a href="mailto:contact@labocontrol.ma">contact@labocontrol.ma</a>
+    <span>LAB/03 · Qualifié par l'État · NM ISO/CEI 17025</span>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero" data-screen-label="01 Hero">
+  <div class="hero__bg"><img src="../assets/hero-drill.jpg" alt="Sondage géotechnique au Maroc" fetchpriority="high"></div>
+  <div class="hero__veil"></div>
+  <div class="hero__topo" aria-hidden="true">
+    <svg viewBox="0 0 1600 900" preserveAspectRatio="none">
+      <path d="M-100 700 C 300 620, 700 780, 1100 660 S 1700 560, 1900 700"/>
+      <path d="M-100 620 C 300 540, 700 700, 1100 580 S 1700 480, 1900 620"/>
+      <path d="M-100 540 C 300 460, 700 620, 1100 500 S 1700 400, 1900 540"/>
+      <path d="M-100 460 C 300 380, 700 540, 1100 420 S 1700 320, 1900 460"/>
+      <path d="M-100 380 C 300 300, 700 460, 1100 340 S 1700 240, 1900 380"/>
+      <path d="M-100 300 C 300 220, 700 380, 1100 260 S 1700 160, 1900 300"/>
+      <path d="M-100 220 C 300 140, 700 300, 1100 180 S 1700  80, 1900 220"/>
+    </svg>
+  </div>
+
+  <div class="hero__topbar">
+    <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+      <span class="badge--blue">QUALIFIÉ LAB/03</span>
+      <span class="badge--red">NM ISO/CEI 17025</span>
+    </div>
+    <div class="hero__coords">
+      <span>33.5731° N</span>
+      <span>7.5898° W</span>
+      <span>CASABLANCA</span>
+    </div>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__eyebrow"><span class="dot"></span> Depuis 1998 — Laboratoire d'étude &amp; contrôle</div>
+    <h1 class="hero__title">
+      <span class="hero__title-rotator" data-rotator="Le sol<br>ne ment <em>jamais.</em><br><span class=&quot;stroke&quot;>Nous non plus.</span>|Sous chaque<br>chantier <em>réussi,</em><br><span class=&quot;stroke&quot;>un sol maîtrisé.</span>|Un rapport<br><em>Labocontrol</em><br><span class=&quot;stroke&quot;>vaut mieux qu'un permis.</span>">
+        <span class="h-slot h-slot--in">Le sol<br>ne ment <em>jamais.</em><br><span class="stroke">Nous non plus.</span></span>
+      </span>
+    </h1>
+
+    <div class="hero__meta">
+      <p class="hero__desc">
+        Sondages, essais, expertises et études d'impact. Nous transformons le terrain en certitude — pour bâtir plus sûr, plus vite, plus juste.
+      </p>
+      <div class="hero__actions">
+        <a href="services.html" class="btn btn--primary">
+          Découvrir nos services
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10m-4-4 4 4-4 4"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn--ghost">Demander un devis</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">DÉFILER</div>
+</section>
+
+<!-- KEY FIGURES -->
+<section class="figures" data-screen-label="02 Chiffres">
+  <div class="figures__grid">
+    <div class="figure reveal">
+      <div class="figure__num"><span data-count="27">0</span><sup>ans</sup></div>
+      <div class="figure__lbl">D'expertise terrain</div>
+    </div>
+    <div class="figure reveal reveal--delay-1">
+      <div class="figure__num"><span data-count="2400">0</span><sup>+</sup></div>
+      <div class="figure__lbl">Projets livrés</div>
+    </div>
+    <div class="figure reveal reveal--delay-2">
+      <div class="figure__num"><span data-count="6">0</span></div>
+      <div class="figure__lbl">Agences au Maroc</div>
+    </div>
+    <div class="figure reveal reveal--delay-3">
+      <div class="figure__num">LAB<sup style="color: var(--accent);">/03</sup></div>
+      <div class="figure__lbl">NM ISO/CEI 17025 &amp; État</div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMENT ON TRAVAILLE (nouveau) -->
+<section class="how" data-screen-label="03 Méthode">
+  <div class="section__head">
+    <div>
+      <div class="section__index">— MÉTHODE</div>
+      <h2 class="section__title reveal">Quatre étapes.<br><em>Zéro angle mort.</em></h2>
+    </div>
+    <a href="demarche.html" class="section__link reveal reveal--delay-1">Voir la démarche complète →</a>
+  </div>
+  <div class="how__grid">
+    <div class="how__step reveal">
+      <div class="how__step__num">01</div>
+      <div class="how__step__name">Brief</div>
+      <p class="how__step__desc">Un ingénieur senior vous rappelle sous 24h. Pas de commercial en amont.</p>
+      <div class="how__step__meta">DÉLAI · 24H</div>
+    </div>
+    <div class="how__step reveal reveal--delay-1">
+      <div class="how__step__num">02</div>
+      <div class="how__step__name">Devis</div>
+      <p class="how__step__desc">Nombre de sondages, essais prévus, normes applicables, planning — chiffré, détaillé.</p>
+      <div class="how__step__meta">DÉLAI · 3-5J</div>
+    </div>
+    <div class="how__step reveal reveal--delay-2">
+      <div class="how__step__num">03</div>
+      <div class="how__step__name">Terrain</div>
+      <p class="how__step__desc">Nos équipes salariées interviennent avec notre matériel étalonné. Chaque essai est identifié et géolocalisé.</p>
+      <div class="how__step__meta">SALARIÉS</div>
+    </div>
+    <div class="how__step reveal reveal--delay-3">
+      <div class="how__step__num">04</div>
+      <div class="how__step__name">Rapport signé</div>
+      <p class="how__step__desc">Un ingénieur qualifié signe le rapport. PDF sécurisé, archivage 10 ans, accès permanent.</p>
+      <div class="how__step__meta">SOUS 24H</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" data-screen-label="04 Services">
+  <div class="section__head">
+    <div>
+      <div class="section__index">01 — SERVICES</div>
+      <h2 class="section__title reveal">Cinq disciplines. <em>Une seule exigence.</em></h2>
+    </div>
+    <p class="section__lead reveal reveal--delay-1">Chaque intervention est portée par nos ingénieurs qualifiés et validée selon les normes NF EN et NM en vigueur.</p>
+  </div>
+
+  <div class="services__list">
+    <a href="services/geotechnique.html" class="service reveal">
+      <span class="service__num">/01</span>
+      <h3 class="service__title serif">Études géotechniques</h3>
+      <p class="service__desc">Sondages, essais en place et en laboratoire, coupes stratigraphiques, dimensionnement des fondations.</p>
+      <div class="service__tags"><span>Sondage</span><span>Fondation</span><span>Sol</span></div>
+      <span class="service__arrow">→</span>
+    </a>
+    <a href="services/expertises.html" class="service reveal">
+      <span class="service__num">/02</span>
+      <h3 class="service__title serif">Expertises &amp; renforcement</h3>
+      <p class="service__desc">Diagnostic des désordres, auscultation pacométrique, résistance du béton en place, méthodologie de renforcement.</p>
+      <div class="service__tags"><span>Audit</span><span>Structure</span><span>Béton</span></div>
+      <span class="service__arrow">→</span>
+    </a>
+    <a href="services/beton.html" class="service reveal">
+      <span class="service__num">/03</span>
+      <h3 class="service__title serif">Essais sur béton frais</h3>
+      <p class="service__desc">Slump test (NF EN 12350), teneur en air occlus, masse volumique — la maîtrise de la mise en œuvre chantier.</p>
+      <div class="service__tags"><span>NF EN 12350</span><span>Chantier</span></div>
+      <span class="service__arrow">→</span>
+    </a>
+    <a href="services/granulats.html" class="service reveal">
+      <span class="service__num">/04</span>
+      <h3 class="service__title serif">Granulats</h3>
+      <p class="service__desc">Granularité, forme, fines, équivalent de sable, bleu de méthylène — tout ce qui décide de la tenue d'une chaussée.</p>
+      <div class="service__tags"><span>NF EN 933</span><span>Route</span></div>
+      <span class="service__arrow">→</span>
+    </a>
+    <a href="services/impact.html" class="service reveal">
+      <span class="service__num">/05</span>
+      <h3 class="service__title serif">Environnement &amp; Hydrogéologie</h3>
+      <p class="service__desc">Études d'impact (EIE), hydrogéologie, perméabilité des sols, assistance CNEIE / CREIE et plans de gestion environnementale.</p>
+      <div class="service__tags"><span class="tag--blue">ISO 17025</span><span>EIE</span><span>Hydrogéologie</span></div>
+      <span class="service__arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- QUALIFICATIONS -->
+<section class="qual" id="qualifications" data-screen-label="04 Qualifications">
+  <div class="section__head">
+    <div>
+      <div class="section__index">02 — QUALIFICATIONS</div>
+      <h2 class="section__title reveal">Certifiés par l'État. <em>Prouvés par le terrain.</em></h2>
+    </div>
+    <p class="section__lead reveal reveal--delay-1">Notre qualification LAB/03 est délivrée par le Ministère de l'Équipement, du Transport et de la Logistique.</p>
+  </div>
+  <div class="qual__grid">
+    <div class="qual-card reveal">
+      <div class="qual-card__badge">01</div>
+      <h3 class="qual-card__title">Qualification d'État</h3>
+      <p class="qual-card__desc">Reconnu par le Ministère de l'Équipement, du Transport et de la Logistique dans plusieurs domaines techniques.</p>
+      <div class="qual-card__ref">RÉF. LAB/03</div>
+    </div>
+    <div class="qual-card qual-card--blue reveal reveal--delay-1">
+      <div class="qual-card__badge">02</div>
+      <h3 class="qual-card__title">Management Qualité</h3>
+      <p class="qual-card__desc">Procédures internes auditées, traçabilité des essais, matériel étalonné par métrologie certifiée.</p>
+      <div class="qual-card__ref">ISO — CONFORME</div>
+    </div>
+    <div class="qual-card qual-card--blue reveal reveal--delay-2">
+      <div class="qual-card__badge">03</div>
+      <h3 class="qual-card__title">Norme NM ISO/CEI 17025</h3>
+      <p class="qual-card__desc">Système d'essais audité. Métrologie certifiée, étalonnage strict du parc instrumental et traçabilité éprouvée.</p>
+      <div class="qual-card__ref">ACCRÉDITÉ ISO 17025</div>
+    </div>
+    <div class="qual-card reveal reveal--delay-3">
+      <div class="qual-card__badge">04</div>
+      <h3 class="qual-card__title">Compétence technique</h3>
+      <p class="qual-card__desc">Ingénieurs, géotechniciens et laborantins formés en continu aux dernières normes NF EN et pratiques du secteur.</p>
+      <div class="qual-card__ref">GARANTIE</div>
+    </div>
+    <div class="qual-card qual-card--blue reveal reveal--delay-4">
+      <div class="qual-card__badge">05</div>
+      <h3 class="qual-card__title">Confidentialité client</h3>
+      <p class="qual-card__desc">Vos données, vos échantillons, vos résultats — protégés par une politique stricte de confidentialité.</p>
+      <div class="qual-card__ref">CLAUSE NDA</div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="equip" data-screen-label="05 Moyens matériels">
+  <div class="section__head">
+    <div>
+      <div class="section__index">03 — MOYENS MATÉRIELS</div>
+      <h2 class="section__title reveal">Le bon outil pour <em>le bon terrain.</em></h2>
+    </div>
+    <p class="section__lead reveal reveal--delay-1">Tout notre matériel est certifié constructeur et étalonné en métrologie. Une flotte complète — du sondage carotté au pénétromètre dynamique.</p>
+  </div>
+
+  <div class="equip__grid">
+    <div class="equip__cell equip__cell--big reveal">
+      <img src="../assets/hero-drill.jpg" alt="Foreuse carottée · Sondages géotechniques profonds" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-01 / 12</span>
+      <span class="equip__cell__lbl">Foreuse carottée · Sondages profonds</span>
+    </div>
+    <div class="equip__cell equip__cell--wide reveal reveal--delay-1">
+      <img src="../images/sized_7.jpg" alt="Banc d'oedomètres et appareil de cisaillement Sheartronic" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-02</span>
+      <span class="equip__cell__lbl">Banc d'oedomètres &amp; cisaillement Sheartronic</span>
+    </div>
+    <div class="equip__cell reveal reveal--delay-2">
+      <img src="../images/sized_2.jpg" alt="Presse de compression hydraulique 3000 kN CONTROLS" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-03</span>
+      <span class="equip__cell__lbl">Presse hydraulique 3000 kN</span>
+    </div>
+    <div class="equip__cell reveal reveal--delay-1">
+      <img src="../images/services_beton_sized.jpg" alt="Cône d'Abrams · Essai d'affaissement du béton frais NF EN 12350-2" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-04</span>
+      <span class="equip__cell__lbl">Cône d'Abrams · Affaissement</span>
+    </div>
+    <div class="equip__cell equip__cell--wide reveal reveal--delay-2">
+      <img src="../images/services_granulat_sized.jpg" alt="Batterie de tamis normalisés · Granulométrie NF EN 933" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-05</span>
+      <span class="equip__cell__lbl">Tamis normalisés · Granulométrie NF EN 933</span>
+    </div>
+    <div class="equip__cell equip__cell--wide reveal reveal--delay-1">
+      <img src="../images/sized_15.jpg" alt="Pacomètre Ferroscan · Détection non destructive d'armatures" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-06</span>
+      <span class="equip__cell__lbl">Pacomètre Ferroscan · Détection d'armatures</span>
+    </div>
+    <div class="equip__cell equip__cell--wide reveal reveal--delay-2">
+      <img src="../images/sized_14.jpg" alt="Scléromètre de Schmidt · Dureté superficielle NF EN 12504-2" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-07</span>
+      <span class="equip__cell__lbl">Scléromètre Schmidt · NF EN 12504-2</span>
+    </div>
+    <div class="equip__cell equip__cell--wide reveal reveal--delay-3">
+      <img src="../images/sized_3.jpg" alt="Tonneaux d'usure des granulats · Essais Los Angeles et Micro-Deval" class="equip__img" loading="lazy">
+      <span class="equip__cell__num">M-08</span>
+      <span class="equip__cell__lbl">Tonneaux Los Angeles &amp; Micro-Deval</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" data-screen-label="Ils en parlent">
+  <div class="testi__inner">
+    <div class="section__index reveal">— ILS EN PARLENT</div>
+    <blockquote class="testi__quote reveal">
+      « Sur nos chantiers, un rapport <em>Labocontrol</em> vaut plus qu'un permis de construire.<br>C'est ce qui rassure notre bureau de contrôle et nos investisseurs. »
+    </blockquote>
+    <div class="testi__author reveal reveal--delay-1">
+      <div class="testi__author__mark">TG</div>
+      <div>
+        <div class="testi__author__name">Youssef T.</div>
+        <div class="testi__author__role">Directeur technique · Grand groupe BTP casablancais</div>
+      </div>
+    </div>
+    <div class="testi__nav">
+      <button class="testi__dot testi__dot--active" aria-label="1"></button>
+      <button class="testi__dot" aria-label="2"></button>
+      <button class="testi__dot" aria-label="3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS marquee -->
+<section class="clients" data-screen-label="06 Clients">
+  <div class="clients__title">
+    <div class="section__index">04 — RÉFÉRENCES</div>
+    <h2 class="section__title reveal">Ils bâtissent avec <em>Labocontrol.</em></h2>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee" aria-hidden="true">
+      <!-- Duplicated for seamless loop -->
+      <span class="marquee__item">OCP</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONCF</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Maroc Telecom</span><span class="marquee__dot"></span>
+      <span class="marquee__item">TGCC</span><span class="marquee__dot"></span>
+      <span class="marquee__item">SGTM</span><span class="marquee__dot"></span>
+      <span class="marquee__item">NOVEC</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONDA</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONEP</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONHYM</span><span class="marquee__dot"></span>
+      <span class="marquee__item">OFPPT</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Meditel</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Cegelec</span><span class="marquee__dot"></span>
+      <span class="marquee__item">SPIE</span><span class="marquee__dot"></span>
+      <span class="marquee__item">STROC</span><span class="marquee__dot"></span>
+      <!-- repeat -->
+      <span class="marquee__item">OCP</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONCF</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Maroc Telecom</span><span class="marquee__dot"></span>
+      <span class="marquee__item">TGCC</span><span class="marquee__dot"></span>
+      <span class="marquee__item">SGTM</span><span class="marquee__dot"></span>
+      <span class="marquee__item">NOVEC</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONDA</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONEP</span><span class="marquee__dot"></span>
+      <span class="marquee__item">ONHYM</span><span class="marquee__dot"></span>
+      <span class="marquee__item">OFPPT</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Meditel</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Cegelec</span><span class="marquee__dot"></span>
+      <span class="marquee__item">SPIE</span><span class="marquee__dot"></span>
+      <span class="marquee__item">STROC</span><span class="marquee__dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- AGENCIES -->
+<section class="agencies" data-screen-label="07 Agences">
+  <div class="section__head">
+    <div>
+      <div class="section__index">05 — PRÉSENCE</div>
+      <h2 class="section__title reveal">Six agences. <em>Un seul Maroc.</em></h2>
+    </div>
+    <p class="section__lead reveal reveal--delay-1">Nous intervenons dans tout le Royaume — d'où nos équipes sont toujours à moins de deux heures de route de votre site.</p>
+  </div>
+
+  <div class="agencies__grid">
+    <div class="map reveal">
+<svg id="map-morocco" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" aria-label="Carte des agences Labocontrol au Maroc" role="img">
+  <defs>
+    <!-- Background engineering grid -->
+    <pattern id="map-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#DAD2C4" stroke-width="0.5" stroke-opacity="0.4"/>
+    </pattern>
+    <!-- Territory subtle dot matrix -->
+    <pattern id="map-dots" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#3B5468" opacity="0.18"/>
+    </pattern>
+    <!-- Territory gradient -->
+    <linearGradient id="map-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFEAE1"/>
+      <stop offset="55%" stop-color="#E5DDD0"/>
+      <stop offset="100%" stop-color="#DAD0C0"/>
+    </linearGradient>
+    <filter id="map-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#14100E" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Graticule background grid -->
+  <rect width="600" height="700" fill="url(#map-grid)"/>
+
+  <!-- Geographic parallels and meridians -->
+  <g class="map__graticules" stroke="#3B5468" stroke-width="0.75" stroke-dasharray="2 4" opacity="0.32">
+    <line x1="0" y1="99.4" x2="600" y2="99.4"/>
+<text x="12" y="95.4" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.1em">35°N</text>
+<line x1="0" y1="297.2" x2="600" y2="297.2"/>
+<text x="12" y="293.2" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.1em">30°N</text>
+<line x1="0" y1="485.3" x2="600" y2="485.3"/>
+<text x="12" y="481.3" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.1em">25°N</text>
+<line x1="102.2" y1="0" x2="102.2" y2="700"/>
+<text x="106.2" y="690" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.1em">15°W</text>
+<line x1="268.9" y1="0" x2="268.9" y2="700"/>
+<text x="272.9" y="690" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.1em">10°W</text>
+<line x1="435.7" y1="0" x2="435.7" y2="700"/>
+<text x="439.7" y="690" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.1em">5°W</text>
+
+  </g>
+
+  <!-- Ocean labels -->
+  <text x="50" y="240" font-family="Fraunces, serif" font-size="12" font-style="italic" fill="#56728A" letter-spacing="0.25em" opacity="0.65" transform="rotate(-70 50 240)">OCÉAN ATLANTIQUE</text>
+  <text x="387.9" y="20" font-family="JetBrains Mono, monospace" font-size="9" fill="#3B5468" letter-spacing="0.16em" opacity="0.75">DÉTROIT DE GIBRALTAR</text>
+  <text x="440" y="38" font-family="Fraunces, serif" font-size="11" font-style="italic" fill="#56728A" letter-spacing="0.2em" opacity="0.65">MER MÉDITERRANÉE</text>
+
+  <!-- Morocco Land Base with drop shadow -->
+  <path d="M 35.0 615.2 L 35.0 616.6 L 34.9 617.2 L 34.6 618.5 L 33.2 629.1 L 32.6 631.0 L 32.5 631.6 L 32.5 633.3 L 32.4 633.8 L 32.1 634.7 L 32.0 635.1 L 32.1 636.0 L 33.2 637.6 L 33.6 638.6 L 32.8 634.7 L 32.9 633.6 L 33.7 630.4 L 33.9 629.3 L 35.3 625.2 L 36.0 621.7 L 36.5 618.6 L 36.9 618.3 L 40.7 618.3 L 42.1 618.3 L 46.0 618.3 L 52.1 618.3 L 59.9 618.3 L 69.2 618.3 L 79.6 618.3 L 90.7 618.3 L 102.1 618.3 L 113.6 618.3 L 124.6 618.3 L 125.7 618.3 L 135.0 618.3 L 144.3 618.3 L 152.2 618.3 L 158.2 618.3 L 162.1 618.3 L 163.5 618.3 L 168.4 618.3 L 168.0 612.5 L 167.8 609.4 L 166.9 594.6 L 166.3 585.6 L 165.8 576.5 L 165.3 574.2 L 163.7 569.6 L 163.4 567.2 L 163.8 564.8 L 164.9 562.5 L 167.7 558.5 L 168.4 557.6 L 171.7 555.3 L 175.9 552.4 L 179.5 549.9 L 181.6 548.5 L 183.6 547.8 L 189.2 547.0 L 190.4 546.6 L 197.7 543.1 L 201.1 542.1 L 201.6 541.6 L 201.7 540.3 L 201.7 537.4 L 201.7 534.6 L 201.7 531.9 L 201.7 529.1 L 201.7 526.4 L 201.7 523.6 L 201.7 520.8 L 201.7 518.1 L 201.7 515.3 L 201.7 512.6 L 201.7 509.8 L 201.7 507.0 L 201.7 504.3 L 201.7 501.5 L 201.7 498.7 L 201.7 495.9 L 201.7 493.2 L 201.7 490.4 L 201.7 487.6 L 201.7 484.8 L 201.7 482.0 L 201.7 479.3 L 201.7 476.5 L 201.7 473.7 L 201.7 470.9 L 201.7 468.1 L 201.7 465.3 L 201.7 462.5 L 201.7 459.7 L 201.7 456.9 L 201.7 454.1 L 201.7 451.3 L 201.7 448.5 L 205.1 448.5 L 208.4 448.5 L 211.8 448.5 L 215.2 448.5 L 218.5 448.5 L 221.9 448.5 L 225.2 448.5 L 228.6 448.5 L 232.0 448.5 L 235.3 448.5 L 238.7 448.5 L 242.0 448.5 L 245.4 448.5 L 248.7 448.5 L 252.1 448.5 L 255.5 448.5 L 258.8 448.5 L 262.2 448.5 L 265.5 448.5 L 268.9 448.5 L 272.3 448.5 L 275.6 448.5 L 279.0 448.5 L 282.3 448.5 L 285.7 448.5 L 289.1 448.5 L 292.4 448.5 L 295.8 448.5 L 299.1 448.5 L 302.5 448.5 L 305.9 448.5 L 309.2 448.5 L 312.0 448.5 L 312.7 448.3 L 312.9 447.8 L 312.9 446.2 L 312.9 445.6 L 312.9 444.2 L 312.9 442.0 L 312.9 439.0 L 312.9 435.6 L 312.9 431.7 L 312.9 427.6 L 312.9 423.3 L 312.9 419.1 L 312.9 414.9 L 312.9 411.0 L 312.9 407.6 L 312.9 404.6 L 312.9 402.3 L 312.9 400.9 L 312.9 400.4 L 312.9 396.8 L 312.9 393.3 L 312.9 389.8 L 312.9 386.2 L 312.9 384.0 L 312.9 381.7 L 312.9 379.5 L 312.9 377.2 L 312.9 374.9 L 312.9 372.7 L 312.9 370.4 L 312.9 368.1 L 312.9 365.9 L 312.9 363.6 L 312.9 361.3 L 312.9 359.1 L 312.9 356.8 L 312.9 354.5 L 312.9 352.3 L 312.9 350.0 L 312.9 348.2 L 313.0 347.2 L 313.4 346.5 L 314.0 346.0 L 318.3 343.6 L 319.8 342.4 L 321.3 341.6 L 321.7 341.1 L 322.8 339.1 L 323.3 338.7 L 324.5 338.2 L 325.1 337.8 L 327.3 335.7 L 329.5 334.2 L 333.3 332.5 L 334.4 331.7 L 337.5 328.8 L 341.0 326.4 L 343.0 324.5 L 344.6 323.6 L 345.1 323.2 L 347.2 321.1 L 348.3 320.6 L 349.9 320.7 L 351.4 321.0 L 352.1 321.0 L 352.8 320.9 L 353.5 320.7 L 357.3 320.9 L 360.3 317.7 L 364.1 316.1 L 366.6 315.8 L 370.4 316.1 L 376.2 318.5 L 379.0 315.8 L 383.7 315.3 L 388.5 313.9 L 393.2 313.4 L 398.1 313.4 L 402.3 313.4 L 406.3 312.6 L 410.5 312.0 L 411.6 315.5 L 414.4 316.6 L 417.7 315.5 L 421.2 311.0 L 424.2 306.1 L 426.5 301.6 L 429.8 298.1 L 433.3 295.6 L 437.0 292.4 L 439.8 290.3 L 443.3 288.4 L 448.2 286.2 L 452.9 282.4 L 456.6 277.6 L 459.9 275.7 L 463.8 274.6 L 469.0 274.3 L 474.5 273.0 L 480.8 269.7 L 480.6 267.3 L 480.4 264.8 L 482.0 263.2 L 483.9 260.2 L 482.1 257.3 L 482.0 256.5 L 481.9 255.9 L 481.6 255.1 L 481.2 254.8 L 480.0 254.2 L 479.4 253.6 L 478.5 252.1 L 478.0 251.6 L 477.4 251.5 L 476.9 251.7 L 475.9 252.7 L 475.3 252.9 L 474.8 252.9 L 474.4 252.5 L 474.3 251.9 L 474.5 251.1 L 475.2 249.9 L 475.3 249.0 L 475.1 246.1 L 475.2 245.4 L 475.6 244.8 L 477.4 243.5 L 479.9 243.3 L 480.4 233.2 L 482.6 232.0 L 484.1 232.3 L 485.3 232.2 L 495.1 230.5 L 502.3 228.3 L 508.1 227.5 L 506.7 223.6 L 504.4 217.5 L 506.3 216.4 L 512.5 215.9 L 518.5 214.2 L 523.1 214.4 L 525.2 214.5 L 527.6 214.6 L 530.2 214.7 L 533.0 214.9 L 535.9 215.0 L 538.8 215.1 L 541.7 215.3 L 544.6 215.4 L 547.3 215.5 L 549.9 215.7 L 552.2 215.8 L 554.2 215.9 L 555.9 215.9 L 557.1 216.0 L 557.9 216.0 L 558.2 216.1 L 560.7 216.2 L 562.1 215.9 L 562.7 214.5 L 562.5 213.6 L 562.0 213.2 L 561.3 212.9 L 560.7 212.9 L 559.4 213.4 L 558.9 213.4 L 558.7 212.8 L 558.9 212.5 L 559.4 212.1 L 559.6 211.9 L 559.8 211.5 L 559.9 211.2 L 559.9 210.8 L 559.9 210.4 L 560.5 206.7 L 560.9 205.3 L 561.3 204.6 L 561.8 203.9 L 562.3 203.6 L 563.7 203.4 L 565.0 202.9 L 566.1 202.1 L 568.0 199.9 L 567.5 199.0 L 558.2 191.8 L 556.0 191.0 L 554.9 190.1 L 550.4 182.5 L 551.8 181.5 L 552.1 181.2 L 552.3 180.9 L 552.4 180.5 L 552.5 180.1 L 552.6 179.2 L 552.6 178.3 L 552.4 177.4 L 551.8 176.9 L 550.9 176.2 L 550.0 175.4 L 549.3 174.4 L 548.9 173.2 L 548.3 172.0 L 546.6 170.4 L 546.3 169.1 L 546.3 165.1 L 546.6 164.1 L 547.1 163.1 L 547.7 160.9 L 548.2 160.1 L 548.6 159.0 L 548.5 157.7 L 547.0 154.1 L 546.6 153.6 L 546.0 153.2 L 544.9 152.8 L 544.4 152.4 L 544.2 151.8 L 544.3 151.2 L 544.6 150.8 L 545.0 150.4 L 545.4 150.0 L 545.6 149.4 L 545.6 149.0 L 545.3 147.8 L 545.0 145.8 L 545.1 143.9 L 546.7 137.5 L 546.7 136.7 L 546.7 136.1 L 546.6 135.6 L 544.2 128.2 L 543.3 126.4 L 542.1 124.8 L 545.6 120.5 L 545.2 120.3 L 544.0 119.9 L 540.0 115.8 L 540.3 115.1 L 542.0 112.4 L 542.9 110.5 L 543.3 110.2 L 543.4 109.9 L 542.8 109.3 L 539.3 107.0 L 538.2 106.0 L 536.4 104.9 L 535.9 104.3 L 535.8 103.7 L 535.7 103.2 L 535.6 102.7 L 535.2 102.4 L 533.7 102.2 L 532.6 101.5 L 531.5 100.5 L 530.3 99.6 L 529.3 99.2 L 528.7 98.4 L 528.3 97.3 L 528.3 95.7 L 527.4 95.4 L 526.5 94.9 L 525.7 94.7 L 525.0 94.5 L 521.8 93.3 L 521.1 93.5 L 520.5 94.0 L 519.8 94.8 L 519.3 95.1 L 518.5 95.3 L 516.9 95.5 L 513.5 95.0 L 511.8 94.4 L 510.3 93.5 L 508.8 91.9 L 508.5 91.5 L 506.9 89.7 L 506.4 89.3 L 506.3 89.7 L 506.8 90.5 L 509.3 93.5 L 510.8 94.7 L 508.3 94.4 L 507.2 94.0 L 506.3 93.4 L 505.8 92.8 L 505.5 92.3 L 505.4 91.8 L 505.3 90.5 L 505.3 89.8 L 505.4 89.2 L 505.7 88.8 L 505.3 88.1 L 504.3 88.5 L 503.6 87.7 L 503.5 86.6 L 504.1 85.9 L 504.1 85.9 L 504.0 85.7 L 503.6 84.1 L 503.9 82.9 L 503.8 82.4 L 504.0 81.7 L 503.8 81.4 L 503.4 81.2 L 503.1 81.3 L 502.9 81.6 L 503.0 82.1 L 502.2 83.3 L 500.9 86.6 L 499.8 87.6 L 499.4 87.7 L 499.0 87.6 L 498.7 87.4 L 498.4 87.4 L 498.1 87.6 L 496.6 89.2 L 495.9 89.7 L 491.7 91.2 L 490.3 91.5 L 488.6 91.3 L 488.3 91.2 L 487.6 90.9 L 487.2 90.8 L 486.9 90.7 L 486.4 90.8 L 486.1 90.8 L 485.2 90.3 L 482.7 89.9 L 482.0 89.4 L 480.6 88.1 L 479.9 87.6 L 479.0 87.5 L 478.2 87.9 L 477.5 88.6 L 477.2 89.7 L 476.9 90.5 L 476.1 90.9 L 475.0 91.0 L 474.3 91.0 L 473.4 90.9 L 472.7 90.9 L 472.2 90.7 L 471.7 90.0 L 471.5 89.7 L 471.4 89.4 L 471.5 89.3 L 471.9 89.2 L 472.0 89.0 L 471.7 88.5 L 470.3 89.2 L 467.5 89.8 L 464.7 91.0 L 460.0 91.8 L 458.1 93.1 L 457.4 93.3 L 456.5 93.2 L 452.5 92.0 L 452.5 92.0 L 448.1 91.0 L 443.3 89.6 L 442.0 88.8 L 440.2 87.1 L 438.7 86.6 L 438.1 85.9 L 437.2 84.6 L 436.1 83.6 L 435.4 83.1 L 434.8 82.9 L 434.0 82.8 L 433.5 82.3 L 430.6 78.3 L 429.5 77.2 L 428.1 76.2 L 427.4 75.5 L 427.0 74.7 L 426.4 72.5 L 426.4 72.2 L 426.5 71.6 L 426.4 71.4 L 426.3 71.3 L 425.7 71.4 L 425.5 71.4 L 425.2 71.1 L 425.0 70.7 L 424.9 70.2 L 424.8 68.5 L 424.3 66.3 L 424.1 65.3 L 424.3 64.7 L 424.3 64.7 L 423.6 64.0 L 423.1 63.3 L 422.7 62.5 L 422.4 61.5 L 422.4 61.5 L 422.2 61.4 L 422.1 61.5 L 422.0 61.8 L 421.9 62.2 L 421.5 62.2 L 421.2 61.9 L 421.0 61.8 L 420.7 61.8 L 420.0 62.1 L 419.4 62.7 L 418.2 64.1 L 417.7 64.6 L 415.7 65.7 L 415.1 65.4 L 414.3 65.2 L 413.5 65.2 L 413.0 65.5 L 412.5 65.2 L 411.9 65.4 L 411.3 65.7 L 410.9 66.0 L 410.0 67.0 L 409.6 67.0 L 406.5 66.6 L 405.4 66.8 L 404.8 67.4 L 404.5 68.1 L 404.2 69.0 L 404.0 71.0 L 403.9 71.4 L 403.5 72.0 L 403.4 72.4 L 403.3 72.7 L 402.6 74.9 L 401.9 76.6 L 401.8 77.1 L 401.7 78.1 L 401.5 78.9 L 395.5 94.3 L 392.6 104.2 L 385.4 119.5 L 384.6 120.7 L 384.1 122.3 L 383.7 123.0 L 380.1 128.5 L 377.9 133.3 L 374.9 138.3 L 371.4 142.1 L 367.9 144.9 L 366.7 145.3 L 365.7 146.3 L 365.1 146.5 L 365.1 146.5 L 363.9 146.7 L 362.5 147.2 L 361.3 147.8 L 360.1 149.0 L 357.6 150.6 L 357.2 150.9 L 356.5 151.1 L 355.8 150.9 L 356.1 150.6 L 355.4 150.8 L 354.5 152.0 L 353.5 152.4 L 352.4 153.9 L 352.0 154.2 L 351.3 154.6 L 350.6 154.9 L 349.7 155.1 L 349.1 155.4 L 348.8 155.6 L 348.4 155.5 L 348.1 155.4 L 347.8 155.3 L 347.4 155.6 L 346.7 155.4 L 346.2 155.9 L 345.6 156.6 L 345.0 156.9 L 344.4 157.1 L 343.0 157.8 L 340.8 158.5 L 340.0 158.8 L 339.2 159.8 L 338.4 160.1 L 336.9 160.5 L 335.2 161.2 L 332.1 162.7 L 327.5 163.7 L 326.1 164.3 L 324.9 165.3 L 323.0 167.7 L 321.8 168.7 L 320.6 169.3 L 320.0 169.5 L 319.1 169.5 L 318.9 169.4 L 318.5 169.1 L 318.2 169.0 L 318.0 169.1 L 315.2 172.4 L 314.9 172.9 L 314.9 173.8 L 314.9 174.3 L 314.6 174.8 L 310.5 179.4 L 306.7 184.5 L 305.6 185.6 L 302.3 187.9 L 298.5 192.4 L 293.6 196.6 L 293.0 197.8 L 293.0 198.5 L 293.2 199.2 L 293.5 199.7 L 293.8 200.1 L 294.0 200.8 L 294.0 201.5 L 293.7 202.3 L 292.8 204.1 L 292.6 204.7 L 292.5 205.6 L 292.7 205.9 L 293.3 206.2 L 293.4 206.4 L 293.3 210.4 L 293.0 211.6 L 292.5 212.7 L 291.3 214.3 L 291.2 214.7 L 291.1 215.4 L 290.7 217.0 L 290.5 217.5 L 290.1 218.4 L 286.1 222.4 L 286.0 222.7 L 285.7 223.4 L 285.4 223.8 L 285.2 224.1 L 284.7 224.4 L 284.4 224.7 L 283.1 226.6 L 280.0 229.9 L 279.8 230.6 L 279.3 233.7 L 279.1 234.1 L 278.7 234.7 L 278.5 235.2 L 278.0 235.7 L 277.8 236.4 L 277.6 236.6 L 277.0 237.2 L 276.6 237.8 L 275.8 240.1 L 275.1 241.5 L 274.0 242.8 L 274.4 243.3 L 274.9 243.7 L 275.2 244.2 L 275.4 245.1 L 275.3 247.3 L 274.4 252.9 L 274.0 253.8 L 274.6 255.2 L 274.7 255.9 L 274.9 263.5 L 274.9 264.0 L 274.8 264.3 L 274.8 264.5 L 275.0 264.8 L 275.2 265.2 L 275.1 265.7 L 274.9 266.6 L 274.3 267.8 L 273.4 269.2 L 272.7 270.7 L 272.6 272.2 L 273.1 272.7 L 273.9 272.9 L 274.6 272.9 L 277.0 274.5 L 277.6 275.6 L 277.9 275.9 L 278.3 276.0 L 278.7 276.1 L 278.9 276.2 L 279.2 277.5 L 280.1 279.5 L 280.4 280.1 L 281.0 280.7 L 281.5 281.1 L 281.9 281.6 L 282.0 282.6 L 281.9 283.4 L 281.3 286.0 L 280.8 290.9 L 280.4 292.3 L 278.3 297.3 L 274.9 303.4 L 270.6 308.1 L 269.2 310.0 L 269.0 310.6 L 268.8 311.1 L 267.2 312.6 L 266.8 313.2 L 266.5 313.9 L 266.3 314.8 L 266.2 315.6 L 266.0 316.0 L 264.7 318.1 L 264.4 318.9 L 264.2 319.1 L 263.0 320.0 L 262.8 320.3 L 262.7 321.0 L 262.3 321.7 L 261.4 322.8 L 260.6 324.1 L 260.1 324.7 L 258.9 325.1 L 258.2 325.7 L 257.3 326.8 L 253.9 332.0 L 249.8 335.9 L 248.5 336.8 L 245.8 338.2 L 243.5 339.7 L 234.0 344.6 L 233.5 345.0 L 232.5 345.9 L 231.9 347.1 L 231.7 347.3 L 230.6 348.2 L 230.4 348.4 L 230.2 348.9 L 229.9 349.2 L 228.5 350.1 L 228.3 350.6 L 226.7 352.6 L 224.7 354.0 L 224.4 354.5 L 224.2 355.3 L 223.7 355.9 L 223.1 356.4 L 222.6 357.0 L 221.3 359.2 L 220.5 360.3 L 219.4 361.2 L 209.5 365.5 L 202.0 368.8 L 201.5 368.9 L 201.3 369.1 L 200.6 369.8 L 200.2 370.1 L 191.1 371.7 L 185.1 373.6 L 180.3 373.5 L 174.3 374.6 L 171.1 375.8 L 170.5 376.2 L 169.9 376.7 L 169.6 377.5 L 168.8 380.2 L 167.4 382.5 L 166.8 383.2 L 165.6 383.6 L 164.5 384.5 L 163.5 385.0 L 163.2 385.3 L 163.0 386.0 L 162.9 386.2 L 162.9 386.2 L 162.8 386.9 L 162.2 388.3 L 162.0 389.0 L 162.0 389.8 L 160.9 393.6 L 159.1 397.9 L 158.6 398.1 L 158.6 398.3 L 158.9 398.7 L 158.8 398.9 L 156.1 403.0 L 155.5 404.4 L 154.5 409.2 L 153.5 411.3 L 152.9 414.4 L 152.2 416.4 L 150.2 420.4 L 148.2 422.7 L 144.1 425.3 L 138.1 429.7 L 134.6 431.5 L 134.0 431.8 L 130.3 432.2 L 129.5 432.6 L 129.1 433.1 L 128.8 433.8 L 128.3 434.4 L 125.6 437.1 L 123.8 438.1 L 122.2 438.4 L 121.9 438.7 L 120.0 441.1 L 119.8 441.5 L 119.5 442.6 L 119.2 443.0 L 119.1 443.4 L 119.4 444.5 L 119.5 445.1 L 119.2 447.2 L 119.3 447.8 L 119.0 448.3 L 118.5 449.9 L 118.4 450.7 L 118.2 451.2 L 117.3 452.8 L 114.8 456.4 L 113.5 459.8 L 113.3 460.9 L 113.0 461.6 L 112.9 461.8 L 112.7 463.5 L 111.7 465.9 L 111.4 466.3 L 111.0 466.6 L 109.5 468.8 L 108.5 472.5 L 108.2 473.1 L 107.2 477.4 L 107.4 478.3 L 107.4 481.6 L 107.5 482.1 L 107.8 482.9 L 107.9 483.4 L 107.9 484.0 L 107.8 484.6 L 107.6 485.2 L 107.4 485.7 L 107.7 486.0 L 107.4 486.6 L 107.5 487.1 L 107.6 487.7 L 107.7 488.3 L 107.5 488.8 L 107.1 489.8 L 106.8 491.5 L 106.0 493.7 L 105.7 496.1 L 105.3 496.8 L 104.6 497.3 L 103.8 497.8 L 103.0 498.5 L 102.2 499.4 L 101.8 500.3 L 101.7 500.5 L 101.7 501.4 L 100.6 502.2 L 99.9 502.6 L 98.4 502.9 L 97.7 503.1 L 97.1 503.4 L 96.5 503.9 L 95.4 504.8 L 94.5 505.8 L 92.2 509.3 L 90.4 511.3 L 87.4 513.8 L 87.1 514.2 L 86.9 514.9 L 86.3 515.4 L 85.0 516.4 L 84.1 517.8 L 82.7 519.4 L 82.2 520.2 L 81.5 521.0 L 80.6 521.5 L 79.5 521.7 L 79.1 522.1 L 77.7 523.0 L 76.6 523.4 L 74.1 525.5 L 73.6 526.1 L 73.1 526.7 L 72.9 527.3 L 70.9 530.1 L 69.6 532.5 L 69.5 533.0 L 68.7 533.9 L 68.5 534.5 L 69.0 534.9 L 70.6 533.4 L 70.9 533.0 L 70.9 532.7 L 71.2 531.9 L 71.3 531.5 L 71.4 531.3 L 71.8 530.5 L 72.3 529.3 L 72.6 528.8 L 72.9 528.4 L 73.4 527.9 L 73.8 527.8 L 74.1 527.9 L 74.5 527.9 L 74.8 527.8 L 75.7 527.2 L 75.9 526.9 L 76.0 526.4 L 75.9 525.9 L 75.9 525.4 L 76.3 525.1 L 76.2 525.4 L 76.1 525.6 L 76.5 526.5 L 76.7 527.2 L 76.6 528.8 L 76.4 529.7 L 76.0 530.4 L 75.5 531.0 L 75.0 531.9 L 74.8 532.2 L 74.7 533.0 L 74.5 533.4 L 74.3 533.6 L 73.7 534.0 L 73.6 534.3 L 72.0 536.1 L 70.8 538.3 L 70.3 539.0 L 69.9 539.7 L 69.5 542.1 L 68.0 544.7 L 67.6 545.1 L 67.2 545.3 L 66.8 545.8 L 64.3 551.6 L 64.2 551.8 L 62.6 553.3 L 62.3 553.7 L 61.7 554.9 L 61.5 555.5 L 62.9 555.2 L 63.5 555.3 L 63.8 556.2 L 63.8 557.0 L 63.6 557.8 L 63.4 558.5 L 63.1 559.3 L 62.0 560.5 L 60.9 561.5 L 60.1 561.7 L 59.3 561.8 L 59.2 561.9 L 59.1 562.2 L 58.8 562.8 L 58.8 563.1 L 58.8 563.5 L 58.8 563.7 L 59.0 564.0 L 59.0 564.4 L 58.3 565.3 L 58.0 565.9 L 57.6 567.2 L 57.5 568.0 L 57.4 571.1 L 56.9 573.4 L 56.5 573.9 L 54.8 575.6 L 54.5 576.0 L 54.4 576.6 L 53.3 580.8 L 52.8 581.7 L 52.1 582.5 L 51.4 583.1 L 47.8 584.5 L 47.4 584.1 L 47.2 583.9 L 46.9 583.8 L 46.5 583.8 L 46.3 584.0 L 46.1 584.2 L 45.3 584.5 L 44.9 585.0 L 44.4 586.2 L 44.2 586.4 L 43.6 586.8 L 43.4 587.0 L 43.0 587.9 L 43.0 588.1 L 42.8 588.4 L 41.6 589.7 L 38.1 596.9 L 37.8 597.7 L 37.6 599.2 L 36.9 600.7 L 36.8 601.7 L 36.6 602.3 L 36.7 602.5 L 37.1 602.8 L 37.3 603.0 L 37.3 603.4 L 37.2 603.9 L 37.1 604.3 L 36.6 605.3 L 36.5 606.1 L 36.6 607.4 L 36.5 609.0 L 35.1 614.3 L 35.0 615.2 Z" fill="url(#map-grad)" filter="url(#map-shadow)"/>
+
+  <!-- Morocco Dot Pattern Overlay -->
+  <path d="M 35.0 615.2 L 35.0 616.6 L 34.9 617.2 L 34.6 618.5 L 33.2 629.1 L 32.6 631.0 L 32.5 631.6 L 32.5 633.3 L 32.4 633.8 L 32.1 634.7 L 32.0 635.1 L 32.1 636.0 L 33.2 637.6 L 33.6 638.6 L 32.8 634.7 L 32.9 633.6 L 33.7 630.4 L 33.9 629.3 L 35.3 625.2 L 36.0 621.7 L 36.5 618.6 L 36.9 618.3 L 40.7 618.3 L 42.1 618.3 L 46.0 618.3 L 52.1 618.3 L 59.9 618.3 L 69.2 618.3 L 79.6 618.3 L 90.7 618.3 L 102.1 618.3 L 113.6 618.3 L 124.6 618.3 L 125.7 618.3 L 135.0 618.3 L 144.3 618.3 L 152.2 618.3 L 158.2 618.3 L 162.1 618.3 L 163.5 618.3 L 168.4 618.3 L 168.0 612.5 L 167.8 609.4 L 166.9 594.6 L 166.3 585.6 L 165.8 576.5 L 165.3 574.2 L 163.7 569.6 L 163.4 567.2 L 163.8 564.8 L 164.9 562.5 L 167.7 558.5 L 168.4 557.6 L 171.7 555.3 L 175.9 552.4 L 179.5 549.9 L 181.6 548.5 L 183.6 547.8 L 189.2 547.0 L 190.4 546.6 L 197.7 543.1 L 201.1 542.1 L 201.6 541.6 L 201.7 540.3 L 201.7 537.4 L 201.7 534.6 L 201.7 531.9 L 201.7 529.1 L 201.7 526.4 L 201.7 523.6 L 201.7 520.8 L 201.7 518.1 L 201.7 515.3 L 201.7 512.6 L 201.7 509.8 L 201.7 507.0 L 201.7 504.3 L 201.7 501.5 L 201.7 498.7 L 201.7 495.9 L 201.7 493.2 L 201.7 490.4 L 201.7 487.6 L 201.7 484.8 L 201.7 482.0 L 201.7 479.3 L 201.7 476.5 L 201.7 473.7 L 201.7 470.9 L 201.7 468.1 L 201.7 465.3 L 201.7 462.5 L 201.7 459.7 L 201.7 456.9 L 201.7 454.1 L 201.7 451.3 L 201.7 448.5 L 205.1 448.5 L 208.4 448.5 L 211.8 448.5 L 215.2 448.5 L 218.5 448.5 L 221.9 448.5 L 225.2 448.5 L 228.6 448.5 L 232.0 448.5 L 235.3 448.5 L 238.7 448.5 L 242.0 448.5 L 245.4 448.5 L 248.7 448.5 L 252.1 448.5 L 255.5 448.5 L 258.8 448.5 L 262.2 448.5 L 265.5 448.5 L 268.9 448.5 L 272.3 448.5 L 275.6 448.5 L 279.0 448.5 L 282.3 448.5 L 285.7 448.5 L 289.1 448.5 L 292.4 448.5 L 295.8 448.5 L 299.1 448.5 L 302.5 448.5 L 305.9 448.5 L 309.2 448.5 L 312.0 448.5 L 312.7 448.3 L 312.9 447.8 L 312.9 446.2 L 312.9 445.6 L 312.9 444.2 L 312.9 442.0 L 312.9 439.0 L 312.9 435.6 L 312.9 431.7 L 312.9 427.6 L 312.9 423.3 L 312.9 419.1 L 312.9 414.9 L 312.9 411.0 L 312.9 407.6 L 312.9 404.6 L 312.9 402.3 L 312.9 400.9 L 312.9 400.4 L 312.9 396.8 L 312.9 393.3 L 312.9 389.8 L 312.9 386.2 L 312.9 384.0 L 312.9 381.7 L 312.9 379.5 L 312.9 377.2 L 312.9 374.9 L 312.9 372.7 L 312.9 370.4 L 312.9 368.1 L 312.9 365.9 L 312.9 363.6 L 312.9 361.3 L 312.9 359.1 L 312.9 356.8 L 312.9 354.5 L 312.9 352.3 L 312.9 350.0 L 312.9 348.2 L 313.0 347.2 L 313.4 346.5 L 314.0 346.0 L 318.3 343.6 L 319.8 342.4 L 321.3 341.6 L 321.7 341.1 L 322.8 339.1 L 323.3 338.7 L 324.5 338.2 L 325.1 337.8 L 327.3 335.7 L 329.5 334.2 L 333.3 332.5 L 334.4 331.7 L 337.5 328.8 L 341.0 326.4 L 343.0 324.5 L 344.6 323.6 L 345.1 323.2 L 347.2 321.1 L 348.3 320.6 L 349.9 320.7 L 351.4 321.0 L 352.1 321.0 L 352.8 320.9 L 353.5 320.7 L 357.3 320.9 L 360.3 317.7 L 364.1 316.1 L 366.6 315.8 L 370.4 316.1 L 376.2 318.5 L 379.0 315.8 L 383.7 315.3 L 388.5 313.9 L 393.2 313.4 L 398.1 313.4 L 402.3 313.4 L 406.3 312.6 L 410.5 312.0 L 411.6 315.5 L 414.4 316.6 L 417.7 315.5 L 421.2 311.0 L 424.2 306.1 L 426.5 301.6 L 429.8 298.1 L 433.3 295.6 L 437.0 292.4 L 439.8 290.3 L 443.3 288.4 L 448.2 286.2 L 452.9 282.4 L 456.6 277.6 L 459.9 275.7 L 463.8 274.6 L 469.0 274.3 L 474.5 273.0 L 480.8 269.7 L 480.6 267.3 L 480.4 264.8 L 482.0 263.2 L 483.9 260.2 L 482.1 257.3 L 482.0 256.5 L 481.9 255.9 L 481.6 255.1 L 481.2 254.8 L 480.0 254.2 L 479.4 253.6 L 478.5 252.1 L 478.0 251.6 L 477.4 251.5 L 476.9 251.7 L 475.9 252.7 L 475.3 252.9 L 474.8 252.9 L 474.4 252.5 L 474.3 251.9 L 474.5 251.1 L 475.2 249.9 L 475.3 249.0 L 475.1 246.1 L 475.2 245.4 L 475.6 244.8 L 477.4 243.5 L 479.9 243.3 L 480.4 233.2 L 482.6 232.0 L 484.1 232.3 L 485.3 232.2 L 495.1 230.5 L 502.3 228.3 L 508.1 227.5 L 506.7 223.6 L 504.4 217.5 L 506.3 216.4 L 512.5 215.9 L 518.5 214.2 L 523.1 214.4 L 525.2 214.5 L 527.6 214.6 L 530.2 214.7 L 533.0 214.9 L 535.9 215.0 L 538.8 215.1 L 541.7 215.3 L 544.6 215.4 L 547.3 215.5 L 549.9 215.7 L 552.2 215.8 L 554.2 215.9 L 555.9 215.9 L 557.1 216.0 L 557.9 216.0 L 558.2 216.1 L 560.7 216.2 L 562.1 215.9 L 562.7 214.5 L 562.5 213.6 L 562.0 213.2 L 561.3 212.9 L 560.7 212.9 L 559.4 213.4 L 558.9 213.4 L 558.7 212.8 L 558.9 212.5 L 559.4 212.1 L 559.6 211.9 L 559.8 211.5 L 559.9 211.2 L 559.9 210.8 L 559.9 210.4 L 560.5 206.7 L 560.9 205.3 L 561.3 204.6 L 561.8 203.9 L 562.3 203.6 L 563.7 203.4 L 565.0 202.9 L 566.1 202.1 L 568.0 199.9 L 567.5 199.0 L 558.2 191.8 L 556.0 191.0 L 554.9 190.1 L 550.4 182.5 L 551.8 181.5 L 552.1 181.2 L 552.3 180.9 L 552.4 180.5 L 552.5 180.1 L 552.6 179.2 L 552.6 178.3 L 552.4 177.4 L 551.8 176.9 L 550.9 176.2 L 550.0 175.4 L 549.3 174.4 L 548.9 173.2 L 548.3 172.0 L 546.6 170.4 L 546.3 169.1 L 546.3 165.1 L 546.6 164.1 L 547.1 163.1 L 547.7 160.9 L 548.2 160.1 L 548.6 159.0 L 548.5 157.7 L 547.0 154.1 L 546.6 153.6 L 546.0 153.2 L 544.9 152.8 L 544.4 152.4 L 544.2 151.8 L 544.3 151.2 L 544.6 150.8 L 545.0 150.4 L 545.4 150.0 L 545.6 149.4 L 545.6 149.0 L 545.3 147.8 L 545.0 145.8 L 545.1 143.9 L 546.7 137.5 L 546.7 136.7 L 546.7 136.1 L 546.6 135.6 L 544.2 128.2 L 543.3 126.4 L 542.1 124.8 L 545.6 120.5 L 545.2 120.3 L 544.0 119.9 L 540.0 115.8 L 540.3 115.1 L 542.0 112.4 L 542.9 110.5 L 543.3 110.2 L 543.4 109.9 L 542.8 109.3 L 539.3 107.0 L 538.2 106.0 L 536.4 104.9 L 535.9 104.3 L 535.8 103.7 L 535.7 103.2 L 535.6 102.7 L 535.2 102.4 L 533.7 102.2 L 532.6 101.5 L 531.5 100.5 L 530.3 99.6 L 529.3 99.2 L 528.7 98.4 L 528.3 97.3 L 528.3 95.7 L 527.4 95.4 L 526.5 94.9 L 525.7 94.7 L 525.0 94.5 L 521.8 93.3 L 521.1 93.5 L 520.5 94.0 L 519.8 94.8 L 519.3 95.1 L 518.5 95.3 L 516.9 95.5 L 513.5 95.0 L 511.8 94.4 L 510.3 93.5 L 508.8 91.9 L 508.5 91.5 L 506.9 89.7 L 506.4 89.3 L 506.3 89.7 L 506.8 90.5 L 509.3 93.5 L 510.8 94.7 L 508.3 94.4 L 507.2 94.0 L 506.3 93.4 L 505.8 92.8 L 505.5 92.3 L 505.4 91.8 L 505.3 90.5 L 505.3 89.8 L 505.4 89.2 L 505.7 88.8 L 505.3 88.1 L 504.3 88.5 L 503.6 87.7 L 503.5 86.6 L 504.1 85.9 L 504.1 85.9 L 504.0 85.7 L 503.6 84.1 L 503.9 82.9 L 503.8 82.4 L 504.0 81.7 L 503.8 81.4 L 503.4 81.2 L 503.1 81.3 L 502.9 81.6 L 503.0 82.1 L 502.2 83.3 L 500.9 86.6 L 499.8 87.6 L 499.4 87.7 L 499.0 87.6 L 498.7 87.4 L 498.4 87.4 L 498.1 87.6 L 496.6 89.2 L 495.9 89.7 L 491.7 91.2 L 490.3 91.5 L 488.6 91.3 L 488.3 91.2 L 487.6 90.9 L 487.2 90.8 L 486.9 90.7 L 486.4 90.8 L 486.1 90.8 L 485.2 90.3 L 482.7 89.9 L 482.0 89.4 L 480.6 88.1 L 479.9 87.6 L 479.0 87.5 L 478.2 87.9 L 477.5 88.6 L 477.2 89.7 L 476.9 90.5 L 476.1 90.9 L 475.0 91.0 L 474.3 91.0 L 473.4 90.9 L 472.7 90.9 L 472.2 90.7 L 471.7 90.0 L 471.5 89.7 L 471.4 89.4 L 471.5 89.3 L 471.9 89.2 L 472.0 89.0 L 471.7 88.5 L 470.3 89.2 L 467.5 89.8 L 464.7 91.0 L 460.0 91.8 L 458.1 93.1 L 457.4 93.3 L 456.5 93.2 L 452.5 92.0 L 452.5 92.0 L 448.1 91.0 L 443.3 89.6 L 442.0 88.8 L 440.2 87.1 L 438.7 86.6 L 438.1 85.9 L 437.2 84.6 L 436.1 83.6 L 435.4 83.1 L 434.8 82.9 L 434.0 82.8 L 433.5 82.3 L 430.6 78.3 L 429.5 77.2 L 428.1 76.2 L 427.4 75.5 L 427.0 74.7 L 426.4 72.5 L 426.4 72.2 L 426.5 71.6 L 426.4 71.4 L 426.3 71.3 L 425.7 71.4 L 425.5 71.4 L 425.2 71.1 L 425.0 70.7 L 424.9 70.2 L 424.8 68.5 L 424.3 66.3 L 424.1 65.3 L 424.3 64.7 L 424.3 64.7 L 423.6 64.0 L 423.1 63.3 L 422.7 62.5 L 422.4 61.5 L 422.4 61.5 L 422.2 61.4 L 422.1 61.5 L 422.0 61.8 L 421.9 62.2 L 421.5 62.2 L 421.2 61.9 L 421.0 61.8 L 420.7 61.8 L 420.0 62.1 L 419.4 62.7 L 418.2 64.1 L 417.7 64.6 L 415.7 65.7 L 415.1 65.4 L 414.3 65.2 L 413.5 65.2 L 413.0 65.5 L 412.5 65.2 L 411.9 65.4 L 411.3 65.7 L 410.9 66.0 L 410.0 67.0 L 409.6 67.0 L 406.5 66.6 L 405.4 66.8 L 404.8 67.4 L 404.5 68.1 L 404.2 69.0 L 404.0 71.0 L 403.9 71.4 L 403.5 72.0 L 403.4 72.4 L 403.3 72.7 L 402.6 74.9 L 401.9 76.6 L 401.8 77.1 L 401.7 78.1 L 401.5 78.9 L 395.5 94.3 L 392.6 104.2 L 385.4 119.5 L 384.6 120.7 L 384.1 122.3 L 383.7 123.0 L 380.1 128.5 L 377.9 133.3 L 374.9 138.3 L 371.4 142.1 L 367.9 144.9 L 366.7 145.3 L 365.7 146.3 L 365.1 146.5 L 365.1 146.5 L 363.9 146.7 L 362.5 147.2 L 361.3 147.8 L 360.1 149.0 L 357.6 150.6 L 357.2 150.9 L 356.5 151.1 L 355.8 150.9 L 356.1 150.6 L 355.4 150.8 L 354.5 152.0 L 353.5 152.4 L 352.4 153.9 L 352.0 154.2 L 351.3 154.6 L 350.6 154.9 L 349.7 155.1 L 349.1 155.4 L 348.8 155.6 L 348.4 155.5 L 348.1 155.4 L 347.8 155.3 L 347.4 155.6 L 346.7 155.4 L 346.2 155.9 L 345.6 156.6 L 345.0 156.9 L 344.4 157.1 L 343.0 157.8 L 340.8 158.5 L 340.0 158.8 L 339.2 159.8 L 338.4 160.1 L 336.9 160.5 L 335.2 161.2 L 332.1 162.7 L 327.5 163.7 L 326.1 164.3 L 324.9 165.3 L 323.0 167.7 L 321.8 168.7 L 320.6 169.3 L 320.0 169.5 L 319.1 169.5 L 318.9 169.4 L 318.5 169.1 L 318.2 169.0 L 318.0 169.1 L 315.2 172.4 L 314.9 172.9 L 314.9 173.8 L 314.9 174.3 L 314.6 174.8 L 310.5 179.4 L 306.7 184.5 L 305.6 185.6 L 302.3 187.9 L 298.5 192.4 L 293.6 196.6 L 293.0 197.8 L 293.0 198.5 L 293.2 199.2 L 293.5 199.7 L 293.8 200.1 L 294.0 200.8 L 294.0 201.5 L 293.7 202.3 L 292.8 204.1 L 292.6 204.7 L 292.5 205.6 L 292.7 205.9 L 293.3 206.2 L 293.4 206.4 L 293.3 210.4 L 293.0 211.6 L 292.5 212.7 L 291.3 214.3 L 291.2 214.7 L 291.1 215.4 L 290.7 217.0 L 290.5 217.5 L 290.1 218.4 L 286.1 222.4 L 286.0 222.7 L 285.7 223.4 L 285.4 223.8 L 285.2 224.1 L 284.7 224.4 L 284.4 224.7 L 283.1 226.6 L 280.0 229.9 L 279.8 230.6 L 279.3 233.7 L 279.1 234.1 L 278.7 234.7 L 278.5 235.2 L 278.0 235.7 L 277.8 236.4 L 277.6 236.6 L 277.0 237.2 L 276.6 237.8 L 275.8 240.1 L 275.1 241.5 L 274.0 242.8 L 274.4 243.3 L 274.9 243.7 L 275.2 244.2 L 275.4 245.1 L 275.3 247.3 L 274.4 252.9 L 274.0 253.8 L 274.6 255.2 L 274.7 255.9 L 274.9 263.5 L 274.9 264.0 L 274.8 264.3 L 274.8 264.5 L 275.0 264.8 L 275.2 265.2 L 275.1 265.7 L 274.9 266.6 L 274.3 267.8 L 273.4 269.2 L 272.7 270.7 L 272.6 272.2 L 273.1 272.7 L 273.9 272.9 L 274.6 272.9 L 277.0 274.5 L 277.6 275.6 L 277.9 275.9 L 278.3 276.0 L 278.7 276.1 L 278.9 276.2 L 279.2 277.5 L 280.1 279.5 L 280.4 280.1 L 281.0 280.7 L 281.5 281.1 L 281.9 281.6 L 282.0 282.6 L 281.9 283.4 L 281.3 286.0 L 280.8 290.9 L 280.4 292.3 L 278.3 297.3 L 274.9 303.4 L 270.6 308.1 L 269.2 310.0 L 269.0 310.6 L 268.8 311.1 L 267.2 312.6 L 266.8 313.2 L 266.5 313.9 L 266.3 314.8 L 266.2 315.6 L 266.0 316.0 L 264.7 318.1 L 264.4 318.9 L 264.2 319.1 L 263.0 320.0 L 262.8 320.3 L 262.7 321.0 L 262.3 321.7 L 261.4 322.8 L 260.6 324.1 L 260.1 324.7 L 258.9 325.1 L 258.2 325.7 L 257.3 326.8 L 253.9 332.0 L 249.8 335.9 L 248.5 336.8 L 245.8 338.2 L 243.5 339.7 L 234.0 344.6 L 233.5 345.0 L 232.5 345.9 L 231.9 347.1 L 231.7 347.3 L 230.6 348.2 L 230.4 348.4 L 230.2 348.9 L 229.9 349.2 L 228.5 350.1 L 228.3 350.6 L 226.7 352.6 L 224.7 354.0 L 224.4 354.5 L 224.2 355.3 L 223.7 355.9 L 223.1 356.4 L 222.6 357.0 L 221.3 359.2 L 220.5 360.3 L 219.4 361.2 L 209.5 365.5 L 202.0 368.8 L 201.5 368.9 L 201.3 369.1 L 200.6 369.8 L 200.2 370.1 L 191.1 371.7 L 185.1 373.6 L 180.3 373.5 L 174.3 374.6 L 171.1 375.8 L 170.5 376.2 L 169.9 376.7 L 169.6 377.5 L 168.8 380.2 L 167.4 382.5 L 166.8 383.2 L 165.6 383.6 L 164.5 384.5 L 163.5 385.0 L 163.2 385.3 L 163.0 386.0 L 162.9 386.2 L 162.9 386.2 L 162.8 386.9 L 162.2 388.3 L 162.0 389.0 L 162.0 389.8 L 160.9 393.6 L 159.1 397.9 L 158.6 398.1 L 158.6 398.3 L 158.9 398.7 L 158.8 398.9 L 156.1 403.0 L 155.5 404.4 L 154.5 409.2 L 153.5 411.3 L 152.9 414.4 L 152.2 416.4 L 150.2 420.4 L 148.2 422.7 L 144.1 425.3 L 138.1 429.7 L 134.6 431.5 L 134.0 431.8 L 130.3 432.2 L 129.5 432.6 L 129.1 433.1 L 128.8 433.8 L 128.3 434.4 L 125.6 437.1 L 123.8 438.1 L 122.2 438.4 L 121.9 438.7 L 120.0 441.1 L 119.8 441.5 L 119.5 442.6 L 119.2 443.0 L 119.1 443.4 L 119.4 444.5 L 119.5 445.1 L 119.2 447.2 L 119.3 447.8 L 119.0 448.3 L 118.5 449.9 L 118.4 450.7 L 118.2 451.2 L 117.3 452.8 L 114.8 456.4 L 113.5 459.8 L 113.3 460.9 L 113.0 461.6 L 112.9 461.8 L 112.7 463.5 L 111.7 465.9 L 111.4 466.3 L 111.0 466.6 L 109.5 468.8 L 108.5 472.5 L 108.2 473.1 L 107.2 477.4 L 107.4 478.3 L 107.4 481.6 L 107.5 482.1 L 107.8 482.9 L 107.9 483.4 L 107.9 484.0 L 107.8 484.6 L 107.6 485.2 L 107.4 485.7 L 107.7 486.0 L 107.4 486.6 L 107.5 487.1 L 107.6 487.7 L 107.7 488.3 L 107.5 488.8 L 107.1 489.8 L 106.8 491.5 L 106.0 493.7 L 105.7 496.1 L 105.3 496.8 L 104.6 497.3 L 103.8 497.8 L 103.0 498.5 L 102.2 499.4 L 101.8 500.3 L 101.7 500.5 L 101.7 501.4 L 100.6 502.2 L 99.9 502.6 L 98.4 502.9 L 97.7 503.1 L 97.1 503.4 L 96.5 503.9 L 95.4 504.8 L 94.5 505.8 L 92.2 509.3 L 90.4 511.3 L 87.4 513.8 L 87.1 514.2 L 86.9 514.9 L 86.3 515.4 L 85.0 516.4 L 84.1 517.8 L 82.7 519.4 L 82.2 520.2 L 81.5 521.0 L 80.6 521.5 L 79.5 521.7 L 79.1 522.1 L 77.7 523.0 L 76.6 523.4 L 74.1 525.5 L 73.6 526.1 L 73.1 526.7 L 72.9 527.3 L 70.9 530.1 L 69.6 532.5 L 69.5 533.0 L 68.7 533.9 L 68.5 534.5 L 69.0 534.9 L 70.6 533.4 L 70.9 533.0 L 70.9 532.7 L 71.2 531.9 L 71.3 531.5 L 71.4 531.3 L 71.8 530.5 L 72.3 529.3 L 72.6 528.8 L 72.9 528.4 L 73.4 527.9 L 73.8 527.8 L 74.1 527.9 L 74.5 527.9 L 74.8 527.8 L 75.7 527.2 L 75.9 526.9 L 76.0 526.4 L 75.9 525.9 L 75.9 525.4 L 76.3 525.1 L 76.2 525.4 L 76.1 525.6 L 76.5 526.5 L 76.7 527.2 L 76.6 528.8 L 76.4 529.7 L 76.0 530.4 L 75.5 531.0 L 75.0 531.9 L 74.8 532.2 L 74.7 533.0 L 74.5 533.4 L 74.3 533.6 L 73.7 534.0 L 73.6 534.3 L 72.0 536.1 L 70.8 538.3 L 70.3 539.0 L 69.9 539.7 L 69.5 542.1 L 68.0 544.7 L 67.6 545.1 L 67.2 545.3 L 66.8 545.8 L 64.3 551.6 L 64.2 551.8 L 62.6 553.3 L 62.3 553.7 L 61.7 554.9 L 61.5 555.5 L 62.9 555.2 L 63.5 555.3 L 63.8 556.2 L 63.8 557.0 L 63.6 557.8 L 63.4 558.5 L 63.1 559.3 L 62.0 560.5 L 60.9 561.5 L 60.1 561.7 L 59.3 561.8 L 59.2 561.9 L 59.1 562.2 L 58.8 562.8 L 58.8 563.1 L 58.8 563.5 L 58.8 563.7 L 59.0 564.0 L 59.0 564.4 L 58.3 565.3 L 58.0 565.9 L 57.6 567.2 L 57.5 568.0 L 57.4 571.1 L 56.9 573.4 L 56.5 573.9 L 54.8 575.6 L 54.5 576.0 L 54.4 576.6 L 53.3 580.8 L 52.8 581.7 L 52.1 582.5 L 51.4 583.1 L 47.8 584.5 L 47.4 584.1 L 47.2 583.9 L 46.9 583.8 L 46.5 583.8 L 46.3 584.0 L 46.1 584.2 L 45.3 584.5 L 44.9 585.0 L 44.4 586.2 L 44.2 586.4 L 43.6 586.8 L 43.4 587.0 L 43.0 587.9 L 43.0 588.1 L 42.8 588.4 L 41.6 589.7 L 38.1 596.9 L 37.8 597.7 L 37.6 599.2 L 36.9 600.7 L 36.8 601.7 L 36.6 602.3 L 36.7 602.5 L 37.1 602.8 L 37.3 603.0 L 37.3 603.4 L 37.2 603.9 L 37.1 604.3 L 36.6 605.3 L 36.5 606.1 L 36.6 607.4 L 36.5 609.0 L 35.1 614.3 L 35.0 615.2 Z" fill="url(#map-dots)"/>
+
+  <!-- Territory Border line -->
+  <path d="M 35.0 615.2 L 35.0 616.6 L 34.9 617.2 L 34.6 618.5 L 33.2 629.1 L 32.6 631.0 L 32.5 631.6 L 32.5 633.3 L 32.4 633.8 L 32.1 634.7 L 32.0 635.1 L 32.1 636.0 L 33.2 637.6 L 33.6 638.6 L 32.8 634.7 L 32.9 633.6 L 33.7 630.4 L 33.9 629.3 L 35.3 625.2 L 36.0 621.7 L 36.5 618.6 L 36.9 618.3 L 40.7 618.3 L 42.1 618.3 L 46.0 618.3 L 52.1 618.3 L 59.9 618.3 L 69.2 618.3 L 79.6 618.3 L 90.7 618.3 L 102.1 618.3 L 113.6 618.3 L 124.6 618.3 L 125.7 618.3 L 135.0 618.3 L 144.3 618.3 L 152.2 618.3 L 158.2 618.3 L 162.1 618.3 L 163.5 618.3 L 168.4 618.3 L 168.0 612.5 L 167.8 609.4 L 166.9 594.6 L 166.3 585.6 L 165.8 576.5 L 165.3 574.2 L 163.7 569.6 L 163.4 567.2 L 163.8 564.8 L 164.9 562.5 L 167.7 558.5 L 168.4 557.6 L 171.7 555.3 L 175.9 552.4 L 179.5 549.9 L 181.6 548.5 L 183.6 547.8 L 189.2 547.0 L 190.4 546.6 L 197.7 543.1 L 201.1 542.1 L 201.6 541.6 L 201.7 540.3 L 201.7 537.4 L 201.7 534.6 L 201.7 531.9 L 201.7 529.1 L 201.7 526.4 L 201.7 523.6 L 201.7 520.8 L 201.7 518.1 L 201.7 515.3 L 201.7 512.6 L 201.7 509.8 L 201.7 507.0 L 201.7 504.3 L 201.7 501.5 L 201.7 498.7 L 201.7 495.9 L 201.7 493.2 L 201.7 490.4 L 201.7 487.6 L 201.7 484.8 L 201.7 482.0 L 201.7 479.3 L 201.7 476.5 L 201.7 473.7 L 201.7 470.9 L 201.7 468.1 L 201.7 465.3 L 201.7 462.5 L 201.7 459.7 L 201.7 456.9 L 201.7 454.1 L 201.7 451.3 L 201.7 448.5 L 205.1 448.5 L 208.4 448.5 L 211.8 448.5 L 215.2 448.5 L 218.5 448.5 L 221.9 448.5 L 225.2 448.5 L 228.6 448.5 L 232.0 448.5 L 235.3 448.5 L 238.7 448.5 L 242.0 448.5 L 245.4 448.5 L 248.7 448.5 L 252.1 448.5 L 255.5 448.5 L 258.8 448.5 L 262.2 448.5 L 265.5 448.5 L 268.9 448.5 L 272.3 448.5 L 275.6 448.5 L 279.0 448.5 L 282.3 448.5 L 285.7 448.5 L 289.1 448.5 L 292.4 448.5 L 295.8 448.5 L 299.1 448.5 L 302.5 448.5 L 305.9 448.5 L 309.2 448.5 L 312.0 448.5 L 312.7 448.3 L 312.9 447.8 L 312.9 446.2 L 312.9 445.6 L 312.9 444.2 L 312.9 442.0 L 312.9 439.0 L 312.9 435.6 L 312.9 431.7 L 312.9 427.6 L 312.9 423.3 L 312.9 419.1 L 312.9 414.9 L 312.9 411.0 L 312.9 407.6 L 312.9 404.6 L 312.9 402.3 L 312.9 400.9 L 312.9 400.4 L 312.9 396.8 L 312.9 393.3 L 312.9 389.8 L 312.9 386.2 L 312.9 384.0 L 312.9 381.7 L 312.9 379.5 L 312.9 377.2 L 312.9 374.9 L 312.9 372.7 L 312.9 370.4 L 312.9 368.1 L 312.9 365.9 L 312.9 363.6 L 312.9 361.3 L 312.9 359.1 L 312.9 356.8 L 312.9 354.5 L 312.9 352.3 L 312.9 350.0 L 312.9 348.2 L 313.0 347.2 L 313.4 346.5 L 314.0 346.0 L 318.3 343.6 L 319.8 342.4 L 321.3 341.6 L 321.7 341.1 L 322.8 339.1 L 323.3 338.7 L 324.5 338.2 L 325.1 337.8 L 327.3 335.7 L 329.5 334.2 L 333.3 332.5 L 334.4 331.7 L 337.5 328.8 L 341.0 326.4 L 343.0 324.5 L 344.6 323.6 L 345.1 323.2 L 347.2 321.1 L 348.3 320.6 L 349.9 320.7 L 351.4 321.0 L 352.1 321.0 L 352.8 320.9 L 353.5 320.7 L 357.3 320.9 L 360.3 317.7 L 364.1 316.1 L 366.6 315.8 L 370.4 316.1 L 376.2 318.5 L 379.0 315.8 L 383.7 315.3 L 388.5 313.9 L 393.2 313.4 L 398.1 313.4 L 402.3 313.4 L 406.3 312.6 L 410.5 312.0 L 411.6 315.5 L 414.4 316.6 L 417.7 315.5 L 421.2 311.0 L 424.2 306.1 L 426.5 301.6 L 429.8 298.1 L 433.3 295.6 L 437.0 292.4 L 439.8 290.3 L 443.3 288.4 L 448.2 286.2 L 452.9 282.4 L 456.6 277.6 L 459.9 275.7 L 463.8 274.6 L 469.0 274.3 L 474.5 273.0 L 480.8 269.7 L 480.6 267.3 L 480.4 264.8 L 482.0 263.2 L 483.9 260.2 L 482.1 257.3 L 482.0 256.5 L 481.9 255.9 L 481.6 255.1 L 481.2 254.8 L 480.0 254.2 L 479.4 253.6 L 478.5 252.1 L 478.0 251.6 L 477.4 251.5 L 476.9 251.7 L 475.9 252.7 L 475.3 252.9 L 474.8 252.9 L 474.4 252.5 L 474.3 251.9 L 474.5 251.1 L 475.2 249.9 L 475.3 249.0 L 475.1 246.1 L 475.2 245.4 L 475.6 244.8 L 477.4 243.5 L 479.9 243.3 L 480.4 233.2 L 482.6 232.0 L 484.1 232.3 L 485.3 232.2 L 495.1 230.5 L 502.3 228.3 L 508.1 227.5 L 506.7 223.6 L 504.4 217.5 L 506.3 216.4 L 512.5 215.9 L 518.5 214.2 L 523.1 214.4 L 525.2 214.5 L 527.6 214.6 L 530.2 214.7 L 533.0 214.9 L 535.9 215.0 L 538.8 215.1 L 541.7 215.3 L 544.6 215.4 L 547.3 215.5 L 549.9 215.7 L 552.2 215.8 L 554.2 215.9 L 555.9 215.9 L 557.1 216.0 L 557.9 216.0 L 558.2 216.1 L 560.7 216.2 L 562.1 215.9 L 562.7 214.5 L 562.5 213.6 L 562.0 213.2 L 561.3 212.9 L 560.7 212.9 L 559.4 213.4 L 558.9 213.4 L 558.7 212.8 L 558.9 212.5 L 559.4 212.1 L 559.6 211.9 L 559.8 211.5 L 559.9 211.2 L 559.9 210.8 L 559.9 210.4 L 560.5 206.7 L 560.9 205.3 L 561.3 204.6 L 561.8 203.9 L 562.3 203.6 L 563.7 203.4 L 565.0 202.9 L 566.1 202.1 L 568.0 199.9 L 567.5 199.0 L 558.2 191.8 L 556.0 191.0 L 554.9 190.1 L 550.4 182.5 L 551.8 181.5 L 552.1 181.2 L 552.3 180.9 L 552.4 180.5 L 552.5 180.1 L 552.6 179.2 L 552.6 178.3 L 552.4 177.4 L 551.8 176.9 L 550.9 176.2 L 550.0 175.4 L 549.3 174.4 L 548.9 173.2 L 548.3 172.0 L 546.6 170.4 L 546.3 169.1 L 546.3 165.1 L 546.6 164.1 L 547.1 163.1 L 547.7 160.9 L 548.2 160.1 L 548.6 159.0 L 548.5 157.7 L 547.0 154.1 L 546.6 153.6 L 546.0 153.2 L 544.9 152.8 L 544.4 152.4 L 544.2 151.8 L 544.3 151.2 L 544.6 150.8 L 545.0 150.4 L 545.4 150.0 L 545.6 149.4 L 545.6 149.0 L 545.3 147.8 L 545.0 145.8 L 545.1 143.9 L 546.7 137.5 L 546.7 136.7 L 546.7 136.1 L 546.6 135.6 L 544.2 128.2 L 543.3 126.4 L 542.1 124.8 L 545.6 120.5 L 545.2 120.3 L 544.0 119.9 L 540.0 115.8 L 540.3 115.1 L 542.0 112.4 L 542.9 110.5 L 543.3 110.2 L 543.4 109.9 L 542.8 109.3 L 539.3 107.0 L 538.2 106.0 L 536.4 104.9 L 535.9 104.3 L 535.8 103.7 L 535.7 103.2 L 535.6 102.7 L 535.2 102.4 L 533.7 102.2 L 532.6 101.5 L 531.5 100.5 L 530.3 99.6 L 529.3 99.2 L 528.7 98.4 L 528.3 97.3 L 528.3 95.7 L 527.4 95.4 L 526.5 94.9 L 525.7 94.7 L 525.0 94.5 L 521.8 93.3 L 521.1 93.5 L 520.5 94.0 L 519.8 94.8 L 519.3 95.1 L 518.5 95.3 L 516.9 95.5 L 513.5 95.0 L 511.8 94.4 L 510.3 93.5 L 508.8 91.9 L 508.5 91.5 L 506.9 89.7 L 506.4 89.3 L 506.3 89.7 L 506.8 90.5 L 509.3 93.5 L 510.8 94.7 L 508.3 94.4 L 507.2 94.0 L 506.3 93.4 L 505.8 92.8 L 505.5 92.3 L 505.4 91.8 L 505.3 90.5 L 505.3 89.8 L 505.4 89.2 L 505.7 88.8 L 505.3 88.1 L 504.3 88.5 L 503.6 87.7 L 503.5 86.6 L 504.1 85.9 L 504.1 85.9 L 504.0 85.7 L 503.6 84.1 L 503.9 82.9 L 503.8 82.4 L 504.0 81.7 L 503.8 81.4 L 503.4 81.2 L 503.1 81.3 L 502.9 81.6 L 503.0 82.1 L 502.2 83.3 L 500.9 86.6 L 499.8 87.6 L 499.4 87.7 L 499.0 87.6 L 498.7 87.4 L 498.4 87.4 L 498.1 87.6 L 496.6 89.2 L 495.9 89.7 L 491.7 91.2 L 490.3 91.5 L 488.6 91.3 L 488.3 91.2 L 487.6 90.9 L 487.2 90.8 L 486.9 90.7 L 486.4 90.8 L 486.1 90.8 L 485.2 90.3 L 482.7 89.9 L 482.0 89.4 L 480.6 88.1 L 479.9 87.6 L 479.0 87.5 L 478.2 87.9 L 477.5 88.6 L 477.2 89.7 L 476.9 90.5 L 476.1 90.9 L 475.0 91.0 L 474.3 91.0 L 473.4 90.9 L 472.7 90.9 L 472.2 90.7 L 471.7 90.0 L 471.5 89.7 L 471.4 89.4 L 471.5 89.3 L 471.9 89.2 L 472.0 89.0 L 471.7 88.5 L 470.3 89.2 L 467.5 89.8 L 464.7 91.0 L 460.0 91.8 L 458.1 93.1 L 457.4 93.3 L 456.5 93.2 L 452.5 92.0 L 452.5 92.0 L 448.1 91.0 L 443.3 89.6 L 442.0 88.8 L 440.2 87.1 L 438.7 86.6 L 438.1 85.9 L 437.2 84.6 L 436.1 83.6 L 435.4 83.1 L 434.8 82.9 L 434.0 82.8 L 433.5 82.3 L 430.6 78.3 L 429.5 77.2 L 428.1 76.2 L 427.4 75.5 L 427.0 74.7 L 426.4 72.5 L 426.4 72.2 L 426.5 71.6 L 426.4 71.4 L 426.3 71.3 L 425.7 71.4 L 425.5 71.4 L 425.2 71.1 L 425.0 70.7 L 424.9 70.2 L 424.8 68.5 L 424.3 66.3 L 424.1 65.3 L 424.3 64.7 L 424.3 64.7 L 423.6 64.0 L 423.1 63.3 L 422.7 62.5 L 422.4 61.5 L 422.4 61.5 L 422.2 61.4 L 422.1 61.5 L 422.0 61.8 L 421.9 62.2 L 421.5 62.2 L 421.2 61.9 L 421.0 61.8 L 420.7 61.8 L 420.0 62.1 L 419.4 62.7 L 418.2 64.1 L 417.7 64.6 L 415.7 65.7 L 415.1 65.4 L 414.3 65.2 L 413.5 65.2 L 413.0 65.5 L 412.5 65.2 L 411.9 65.4 L 411.3 65.7 L 410.9 66.0 L 410.0 67.0 L 409.6 67.0 L 406.5 66.6 L 405.4 66.8 L 404.8 67.4 L 404.5 68.1 L 404.2 69.0 L 404.0 71.0 L 403.9 71.4 L 403.5 72.0 L 403.4 72.4 L 403.3 72.7 L 402.6 74.9 L 401.9 76.6 L 401.8 77.1 L 401.7 78.1 L 401.5 78.9 L 395.5 94.3 L 392.6 104.2 L 385.4 119.5 L 384.6 120.7 L 384.1 122.3 L 383.7 123.0 L 380.1 128.5 L 377.9 133.3 L 374.9 138.3 L 371.4 142.1 L 367.9 144.9 L 366.7 145.3 L 365.7 146.3 L 365.1 146.5 L 365.1 146.5 L 363.9 146.7 L 362.5 147.2 L 361.3 147.8 L 360.1 149.0 L 357.6 150.6 L 357.2 150.9 L 356.5 151.1 L 355.8 150.9 L 356.1 150.6 L 355.4 150.8 L 354.5 152.0 L 353.5 152.4 L 352.4 153.9 L 352.0 154.2 L 351.3 154.6 L 350.6 154.9 L 349.7 155.1 L 349.1 155.4 L 348.8 155.6 L 348.4 155.5 L 348.1 155.4 L 347.8 155.3 L 347.4 155.6 L 346.7 155.4 L 346.2 155.9 L 345.6 156.6 L 345.0 156.9 L 344.4 157.1 L 343.0 157.8 L 340.8 158.5 L 340.0 158.8 L 339.2 159.8 L 338.4 160.1 L 336.9 160.5 L 335.2 161.2 L 332.1 162.7 L 327.5 163.7 L 326.1 164.3 L 324.9 165.3 L 323.0 167.7 L 321.8 168.7 L 320.6 169.3 L 320.0 169.5 L 319.1 169.5 L 318.9 169.4 L 318.5 169.1 L 318.2 169.0 L 318.0 169.1 L 315.2 172.4 L 314.9 172.9 L 314.9 173.8 L 314.9 174.3 L 314.6 174.8 L 310.5 179.4 L 306.7 184.5 L 305.6 185.6 L 302.3 187.9 L 298.5 192.4 L 293.6 196.6 L 293.0 197.8 L 293.0 198.5 L 293.2 199.2 L 293.5 199.7 L 293.8 200.1 L 294.0 200.8 L 294.0 201.5 L 293.7 202.3 L 292.8 204.1 L 292.6 204.7 L 292.5 205.6 L 292.7 205.9 L 293.3 206.2 L 293.4 206.4 L 293.3 210.4 L 293.0 211.6 L 292.5 212.7 L 291.3 214.3 L 291.2 214.7 L 291.1 215.4 L 290.7 217.0 L 290.5 217.5 L 290.1 218.4 L 286.1 222.4 L 286.0 222.7 L 285.7 223.4 L 285.4 223.8 L 285.2 224.1 L 284.7 224.4 L 284.4 224.7 L 283.1 226.6 L 280.0 229.9 L 279.8 230.6 L 279.3 233.7 L 279.1 234.1 L 278.7 234.7 L 278.5 235.2 L 278.0 235.7 L 277.8 236.4 L 277.6 236.6 L 277.0 237.2 L 276.6 237.8 L 275.8 240.1 L 275.1 241.5 L 274.0 242.8 L 274.4 243.3 L 274.9 243.7 L 275.2 244.2 L 275.4 245.1 L 275.3 247.3 L 274.4 252.9 L 274.0 253.8 L 274.6 255.2 L 274.7 255.9 L 274.9 263.5 L 274.9 264.0 L 274.8 264.3 L 274.8 264.5 L 275.0 264.8 L 275.2 265.2 L 275.1 265.7 L 274.9 266.6 L 274.3 267.8 L 273.4 269.2 L 272.7 270.7 L 272.6 272.2 L 273.1 272.7 L 273.9 272.9 L 274.6 272.9 L 277.0 274.5 L 277.6 275.6 L 277.9 275.9 L 278.3 276.0 L 278.7 276.1 L 278.9 276.2 L 279.2 277.5 L 280.1 279.5 L 280.4 280.1 L 281.0 280.7 L 281.5 281.1 L 281.9 281.6 L 282.0 282.6 L 281.9 283.4 L 281.3 286.0 L 280.8 290.9 L 280.4 292.3 L 278.3 297.3 L 274.9 303.4 L 270.6 308.1 L 269.2 310.0 L 269.0 310.6 L 268.8 311.1 L 267.2 312.6 L 266.8 313.2 L 266.5 313.9 L 266.3 314.8 L 266.2 315.6 L 266.0 316.0 L 264.7 318.1 L 264.4 318.9 L 264.2 319.1 L 263.0 320.0 L 262.8 320.3 L 262.7 321.0 L 262.3 321.7 L 261.4 322.8 L 260.6 324.1 L 260.1 324.7 L 258.9 325.1 L 258.2 325.7 L 257.3 326.8 L 253.9 332.0 L 249.8 335.9 L 248.5 336.8 L 245.8 338.2 L 243.5 339.7 L 234.0 344.6 L 233.5 345.0 L 232.5 345.9 L 231.9 347.1 L 231.7 347.3 L 230.6 348.2 L 230.4 348.4 L 230.2 348.9 L 229.9 349.2 L 228.5 350.1 L 228.3 350.6 L 226.7 352.6 L 224.7 354.0 L 224.4 354.5 L 224.2 355.3 L 223.7 355.9 L 223.1 356.4 L 222.6 357.0 L 221.3 359.2 L 220.5 360.3 L 219.4 361.2 L 209.5 365.5 L 202.0 368.8 L 201.5 368.9 L 201.3 369.1 L 200.6 369.8 L 200.2 370.1 L 191.1 371.7 L 185.1 373.6 L 180.3 373.5 L 174.3 374.6 L 171.1 375.8 L 170.5 376.2 L 169.9 376.7 L 169.6 377.5 L 168.8 380.2 L 167.4 382.5 L 166.8 383.2 L 165.6 383.6 L 164.5 384.5 L 163.5 385.0 L 163.2 385.3 L 163.0 386.0 L 162.9 386.2 L 162.9 386.2 L 162.8 386.9 L 162.2 388.3 L 162.0 389.0 L 162.0 389.8 L 160.9 393.6 L 159.1 397.9 L 158.6 398.1 L 158.6 398.3 L 158.9 398.7 L 158.8 398.9 L 156.1 403.0 L 155.5 404.4 L 154.5 409.2 L 153.5 411.3 L 152.9 414.4 L 152.2 416.4 L 150.2 420.4 L 148.2 422.7 L 144.1 425.3 L 138.1 429.7 L 134.6 431.5 L 134.0 431.8 L 130.3 432.2 L 129.5 432.6 L 129.1 433.1 L 128.8 433.8 L 128.3 434.4 L 125.6 437.1 L 123.8 438.1 L 122.2 438.4 L 121.9 438.7 L 120.0 441.1 L 119.8 441.5 L 119.5 442.6 L 119.2 443.0 L 119.1 443.4 L 119.4 444.5 L 119.5 445.1 L 119.2 447.2 L 119.3 447.8 L 119.0 448.3 L 118.5 449.9 L 118.4 450.7 L 118.2 451.2 L 117.3 452.8 L 114.8 456.4 L 113.5 459.8 L 113.3 460.9 L 113.0 461.6 L 112.9 461.8 L 112.7 463.5 L 111.7 465.9 L 111.4 466.3 L 111.0 466.6 L 109.5 468.8 L 108.5 472.5 L 108.2 473.1 L 107.2 477.4 L 107.4 478.3 L 107.4 481.6 L 107.5 482.1 L 107.8 482.9 L 107.9 483.4 L 107.9 484.0 L 107.8 484.6 L 107.6 485.2 L 107.4 485.7 L 107.7 486.0 L 107.4 486.6 L 107.5 487.1 L 107.6 487.7 L 107.7 488.3 L 107.5 488.8 L 107.1 489.8 L 106.8 491.5 L 106.0 493.7 L 105.7 496.1 L 105.3 496.8 L 104.6 497.3 L 103.8 497.8 L 103.0 498.5 L 102.2 499.4 L 101.8 500.3 L 101.7 500.5 L 101.7 501.4 L 100.6 502.2 L 99.9 502.6 L 98.4 502.9 L 97.7 503.1 L 97.1 503.4 L 96.5 503.9 L 95.4 504.8 L 94.5 505.8 L 92.2 509.3 L 90.4 511.3 L 87.4 513.8 L 87.1 514.2 L 86.9 514.9 L 86.3 515.4 L 85.0 516.4 L 84.1 517.8 L 82.7 519.4 L 82.2 520.2 L 81.5 521.0 L 80.6 521.5 L 79.5 521.7 L 79.1 522.1 L 77.7 523.0 L 76.6 523.4 L 74.1 525.5 L 73.6 526.1 L 73.1 526.7 L 72.9 527.3 L 70.9 530.1 L 69.6 532.5 L 69.5 533.0 L 68.7 533.9 L 68.5 534.5 L 69.0 534.9 L 70.6 533.4 L 70.9 533.0 L 70.9 532.7 L 71.2 531.9 L 71.3 531.5 L 71.4 531.3 L 71.8 530.5 L 72.3 529.3 L 72.6 528.8 L 72.9 528.4 L 73.4 527.9 L 73.8 527.8 L 74.1 527.9 L 74.5 527.9 L 74.8 527.8 L 75.7 527.2 L 75.9 526.9 L 76.0 526.4 L 75.9 525.9 L 75.9 525.4 L 76.3 525.1 L 76.2 525.4 L 76.1 525.6 L 76.5 526.5 L 76.7 527.2 L 76.6 528.8 L 76.4 529.7 L 76.0 530.4 L 75.5 531.0 L 75.0 531.9 L 74.8 532.2 L 74.7 533.0 L 74.5 533.4 L 74.3 533.6 L 73.7 534.0 L 73.6 534.3 L 72.0 536.1 L 70.8 538.3 L 70.3 539.0 L 69.9 539.7 L 69.5 542.1 L 68.0 544.7 L 67.6 545.1 L 67.2 545.3 L 66.8 545.8 L 64.3 551.6 L 64.2 551.8 L 62.6 553.3 L 62.3 553.7 L 61.7 554.9 L 61.5 555.5 L 62.9 555.2 L 63.5 555.3 L 63.8 556.2 L 63.8 557.0 L 63.6 557.8 L 63.4 558.5 L 63.1 559.3 L 62.0 560.5 L 60.9 561.5 L 60.1 561.7 L 59.3 561.8 L 59.2 561.9 L 59.1 562.2 L 58.8 562.8 L 58.8 563.1 L 58.8 563.5 L 58.8 563.7 L 59.0 564.0 L 59.0 564.4 L 58.3 565.3 L 58.0 565.9 L 57.6 567.2 L 57.5 568.0 L 57.4 571.1 L 56.9 573.4 L 56.5 573.9 L 54.8 575.6 L 54.5 576.0 L 54.4 576.6 L 53.3 580.8 L 52.8 581.7 L 52.1 582.5 L 51.4 583.1 L 47.8 584.5 L 47.4 584.1 L 47.2 583.9 L 46.9 583.8 L 46.5 583.8 L 46.3 584.0 L 46.1 584.2 L 45.3 584.5 L 44.9 585.0 L 44.4 586.2 L 44.2 586.4 L 43.6 586.8 L 43.4 587.0 L 43.0 587.9 L 43.0 588.1 L 42.8 588.4 L 41.6 589.7 L 38.1 596.9 L 37.8 597.7 L 37.6 599.2 L 36.9 600.7 L 36.8 601.7 L 36.6 602.3 L 36.7 602.5 L 37.1 602.8 L 37.3 603.0 L 37.3 603.4 L 37.2 603.9 L 37.1 604.3 L 36.6 605.3 L 36.5 606.1 L 36.6 607.4 L 36.5 609.0 L 35.1 614.3 L 35.0 615.2 Z" fill="none" stroke="#D01919" stroke-width="1.8" opacity="0.8"/>
+  <path d="M 35.0 615.2 L 35.0 616.6 L 34.9 617.2 L 34.6 618.5 L 33.2 629.1 L 32.6 631.0 L 32.5 631.6 L 32.5 633.3 L 32.4 633.8 L 32.1 634.7 L 32.0 635.1 L 32.1 636.0 L 33.2 637.6 L 33.6 638.6 L 32.8 634.7 L 32.9 633.6 L 33.7 630.4 L 33.9 629.3 L 35.3 625.2 L 36.0 621.7 L 36.5 618.6 L 36.9 618.3 L 40.7 618.3 L 42.1 618.3 L 46.0 618.3 L 52.1 618.3 L 59.9 618.3 L 69.2 618.3 L 79.6 618.3 L 90.7 618.3 L 102.1 618.3 L 113.6 618.3 L 124.6 618.3 L 125.7 618.3 L 135.0 618.3 L 144.3 618.3 L 152.2 618.3 L 158.2 618.3 L 162.1 618.3 L 163.5 618.3 L 168.4 618.3 L 168.0 612.5 L 167.8 609.4 L 166.9 594.6 L 166.3 585.6 L 165.8 576.5 L 165.3 574.2 L 163.7 569.6 L 163.4 567.2 L 163.8 564.8 L 164.9 562.5 L 167.7 558.5 L 168.4 557.6 L 171.7 555.3 L 175.9 552.4 L 179.5 549.9 L 181.6 548.5 L 183.6 547.8 L 189.2 547.0 L 190.4 546.6 L 197.7 543.1 L 201.1 542.1 L 201.6 541.6 L 201.7 540.3 L 201.7 537.4 L 201.7 534.6 L 201.7 531.9 L 201.7 529.1 L 201.7 526.4 L 201.7 523.6 L 201.7 520.8 L 201.7 518.1 L 201.7 515.3 L 201.7 512.6 L 201.7 509.8 L 201.7 507.0 L 201.7 504.3 L 201.7 501.5 L 201.7 498.7 L 201.7 495.9 L 201.7 493.2 L 201.7 490.4 L 201.7 487.6 L 201.7 484.8 L 201.7 482.0 L 201.7 479.3 L 201.7 476.5 L 201.7 473.7 L 201.7 470.9 L 201.7 468.1 L 201.7 465.3 L 201.7 462.5 L 201.7 459.7 L 201.7 456.9 L 201.7 454.1 L 201.7 451.3 L 201.7 448.5 L 205.1 448.5 L 208.4 448.5 L 211.8 448.5 L 215.2 448.5 L 218.5 448.5 L 221.9 448.5 L 225.2 448.5 L 228.6 448.5 L 232.0 448.5 L 235.3 448.5 L 238.7 448.5 L 242.0 448.5 L 245.4 448.5 L 248.7 448.5 L 252.1 448.5 L 255.5 448.5 L 258.8 448.5 L 262.2 448.5 L 265.5 448.5 L 268.9 448.5 L 272.3 448.5 L 275.6 448.5 L 279.0 448.5 L 282.3 448.5 L 285.7 448.5 L 289.1 448.5 L 292.4 448.5 L 295.8 448.5 L 299.1 448.5 L 302.5 448.5 L 305.9 448.5 L 309.2 448.5 L 312.0 448.5 L 312.7 448.3 L 312.9 447.8 L 312.9 446.2 L 312.9 445.6 L 312.9 444.2 L 312.9 442.0 L 312.9 439.0 L 312.9 435.6 L 312.9 431.7 L 312.9 427.6 L 312.9 423.3 L 312.9 419.1 L 312.9 414.9 L 312.9 411.0 L 312.9 407.6 L 312.9 404.6 L 312.9 402.3 L 312.9 400.9 L 312.9 400.4 L 312.9 396.8 L 312.9 393.3 L 312.9 389.8 L 312.9 386.2 L 312.9 384.0 L 312.9 381.7 L 312.9 379.5 L 312.9 377.2 L 312.9 374.9 L 312.9 372.7 L 312.9 370.4 L 312.9 368.1 L 312.9 365.9 L 312.9 363.6 L 312.9 361.3 L 312.9 359.1 L 312.9 356.8 L 312.9 354.5 L 312.9 352.3 L 312.9 350.0 L 312.9 348.2 L 313.0 347.2 L 313.4 346.5 L 314.0 346.0 L 318.3 343.6 L 319.8 342.4 L 321.3 341.6 L 321.7 341.1 L 322.8 339.1 L 323.3 338.7 L 324.5 338.2 L 325.1 337.8 L 327.3 335.7 L 329.5 334.2 L 333.3 332.5 L 334.4 331.7 L 337.5 328.8 L 341.0 326.4 L 343.0 324.5 L 344.6 323.6 L 345.1 323.2 L 347.2 321.1 L 348.3 320.6 L 349.9 320.7 L 351.4 321.0 L 352.1 321.0 L 352.8 320.9 L 353.5 320.7 L 357.3 320.9 L 360.3 317.7 L 364.1 316.1 L 366.6 315.8 L 370.4 316.1 L 376.2 318.5 L 379.0 315.8 L 383.7 315.3 L 388.5 313.9 L 393.2 313.4 L 398.1 313.4 L 402.3 313.4 L 406.3 312.6 L 410.5 312.0 L 411.6 315.5 L 414.4 316.6 L 417.7 315.5 L 421.2 311.0 L 424.2 306.1 L 426.5 301.6 L 429.8 298.1 L 433.3 295.6 L 437.0 292.4 L 439.8 290.3 L 443.3 288.4 L 448.2 286.2 L 452.9 282.4 L 456.6 277.6 L 459.9 275.7 L 463.8 274.6 L 469.0 274.3 L 474.5 273.0 L 480.8 269.7 L 480.6 267.3 L 480.4 264.8 L 482.0 263.2 L 483.9 260.2 L 482.1 257.3 L 482.0 256.5 L 481.9 255.9 L 481.6 255.1 L 481.2 254.8 L 480.0 254.2 L 479.4 253.6 L 478.5 252.1 L 478.0 251.6 L 477.4 251.5 L 476.9 251.7 L 475.9 252.7 L 475.3 252.9 L 474.8 252.9 L 474.4 252.5 L 474.3 251.9 L 474.5 251.1 L 475.2 249.9 L 475.3 249.0 L 475.1 246.1 L 475.2 245.4 L 475.6 244.8 L 477.4 243.5 L 479.9 243.3 L 480.4 233.2 L 482.6 232.0 L 484.1 232.3 L 485.3 232.2 L 495.1 230.5 L 502.3 228.3 L 508.1 227.5 L 506.7 223.6 L 504.4 217.5 L 506.3 216.4 L 512.5 215.9 L 518.5 214.2 L 523.1 214.4 L 525.2 214.5 L 527.6 214.6 L 530.2 214.7 L 533.0 214.9 L 535.9 215.0 L 538.8 215.1 L 541.7 215.3 L 544.6 215.4 L 547.3 215.5 L 549.9 215.7 L 552.2 215.8 L 554.2 215.9 L 555.9 215.9 L 557.1 216.0 L 557.9 216.0 L 558.2 216.1 L 560.7 216.2 L 562.1 215.9 L 562.7 214.5 L 562.5 213.6 L 562.0 213.2 L 561.3 212.9 L 560.7 212.9 L 559.4 213.4 L 558.9 213.4 L 558.7 212.8 L 558.9 212.5 L 559.4 212.1 L 559.6 211.9 L 559.8 211.5 L 559.9 211.2 L 559.9 210.8 L 559.9 210.4 L 560.5 206.7 L 560.9 205.3 L 561.3 204.6 L 561.8 203.9 L 562.3 203.6 L 563.7 203.4 L 565.0 202.9 L 566.1 202.1 L 568.0 199.9 L 567.5 199.0 L 558.2 191.8 L 556.0 191.0 L 554.9 190.1 L 550.4 182.5 L 551.8 181.5 L 552.1 181.2 L 552.3 180.9 L 552.4 180.5 L 552.5 180.1 L 552.6 179.2 L 552.6 178.3 L 552.4 177.4 L 551.8 176.9 L 550.9 176.2 L 550.0 175.4 L 549.3 174.4 L 548.9 173.2 L 548.3 172.0 L 546.6 170.4 L 546.3 169.1 L 546.3 165.1 L 546.6 164.1 L 547.1 163.1 L 547.7 160.9 L 548.2 160.1 L 548.6 159.0 L 548.5 157.7 L 547.0 154.1 L 546.6 153.6 L 546.0 153.2 L 544.9 152.8 L 544.4 152.4 L 544.2 151.8 L 544.3 151.2 L 544.6 150.8 L 545.0 150.4 L 545.4 150.0 L 545.6 149.4 L 545.6 149.0 L 545.3 147.8 L 545.0 145.8 L 545.1 143.9 L 546.7 137.5 L 546.7 136.7 L 546.7 136.1 L 546.6 135.6 L 544.2 128.2 L 543.3 126.4 L 542.1 124.8 L 545.6 120.5 L 545.2 120.3 L 544.0 119.9 L 540.0 115.8 L 540.3 115.1 L 542.0 112.4 L 542.9 110.5 L 543.3 110.2 L 543.4 109.9 L 542.8 109.3 L 539.3 107.0 L 538.2 106.0 L 536.4 104.9 L 535.9 104.3 L 535.8 103.7 L 535.7 103.2 L 535.6 102.7 L 535.2 102.4 L 533.7 102.2 L 532.6 101.5 L 531.5 100.5 L 530.3 99.6 L 529.3 99.2 L 528.7 98.4 L 528.3 97.3 L 528.3 95.7 L 527.4 95.4 L 526.5 94.9 L 525.7 94.7 L 525.0 94.5 L 521.8 93.3 L 521.1 93.5 L 520.5 94.0 L 519.8 94.8 L 519.3 95.1 L 518.5 95.3 L 516.9 95.5 L 513.5 95.0 L 511.8 94.4 L 510.3 93.5 L 508.8 91.9 L 508.5 91.5 L 506.9 89.7 L 506.4 89.3 L 506.3 89.7 L 506.8 90.5 L 509.3 93.5 L 510.8 94.7 L 508.3 94.4 L 507.2 94.0 L 506.3 93.4 L 505.8 92.8 L 505.5 92.3 L 505.4 91.8 L 505.3 90.5 L 505.3 89.8 L 505.4 89.2 L 505.7 88.8 L 505.3 88.1 L 504.3 88.5 L 503.6 87.7 L 503.5 86.6 L 504.1 85.9 L 504.1 85.9 L 504.0 85.7 L 503.6 84.1 L 503.9 82.9 L 503.8 82.4 L 504.0 81.7 L 503.8 81.4 L 503.4 81.2 L 503.1 81.3 L 502.9 81.6 L 503.0 82.1 L 502.2 83.3 L 500.9 86.6 L 499.8 87.6 L 499.4 87.7 L 499.0 87.6 L 498.7 87.4 L 498.4 87.4 L 498.1 87.6 L 496.6 89.2 L 495.9 89.7 L 491.7 91.2 L 490.3 91.5 L 488.6 91.3 L 488.3 91.2 L 487.6 90.9 L 487.2 90.8 L 486.9 90.7 L 486.4 90.8 L 486.1 90.8 L 485.2 90.3 L 482.7 89.9 L 482.0 89.4 L 480.6 88.1 L 479.9 87.6 L 479.0 87.5 L 478.2 87.9 L 477.5 88.6 L 477.2 89.7 L 476.9 90.5 L 476.1 90.9 L 475.0 91.0 L 474.3 91.0 L 473.4 90.9 L 472.7 90.9 L 472.2 90.7 L 471.7 90.0 L 471.5 89.7 L 471.4 89.4 L 471.5 89.3 L 471.9 89.2 L 472.0 89.0 L 471.7 88.5 L 470.3 89.2 L 467.5 89.8 L 464.7 91.0 L 460.0 91.8 L 458.1 93.1 L 457.4 93.3 L 456.5 93.2 L 452.5 92.0 L 452.5 92.0 L 448.1 91.0 L 443.3 89.6 L 442.0 88.8 L 440.2 87.1 L 438.7 86.6 L 438.1 85.9 L 437.2 84.6 L 436.1 83.6 L 435.4 83.1 L 434.8 82.9 L 434.0 82.8 L 433.5 82.3 L 430.6 78.3 L 429.5 77.2 L 428.1 76.2 L 427.4 75.5 L 427.0 74.7 L 426.4 72.5 L 426.4 72.2 L 426.5 71.6 L 426.4 71.4 L 426.3 71.3 L 425.7 71.4 L 425.5 71.4 L 425.2 71.1 L 425.0 70.7 L 424.9 70.2 L 424.8 68.5 L 424.3 66.3 L 424.1 65.3 L 424.3 64.7 L 424.3 64.7 L 423.6 64.0 L 423.1 63.3 L 422.7 62.5 L 422.4 61.5 L 422.4 61.5 L 422.2 61.4 L 422.1 61.5 L 422.0 61.8 L 421.9 62.2 L 421.5 62.2 L 421.2 61.9 L 421.0 61.8 L 420.7 61.8 L 420.0 62.1 L 419.4 62.7 L 418.2 64.1 L 417.7 64.6 L 415.7 65.7 L 415.1 65.4 L 414.3 65.2 L 413.5 65.2 L 413.0 65.5 L 412.5 65.2 L 411.9 65.4 L 411.3 65.7 L 410.9 66.0 L 410.0 67.0 L 409.6 67.0 L 406.5 66.6 L 405.4 66.8 L 404.8 67.4 L 404.5 68.1 L 404.2 69.0 L 404.0 71.0 L 403.9 71.4 L 403.5 72.0 L 403.4 72.4 L 403.3 72.7 L 402.6 74.9 L 401.9 76.6 L 401.8 77.1 L 401.7 78.1 L 401.5 78.9 L 395.5 94.3 L 392.6 104.2 L 385.4 119.5 L 384.6 120.7 L 384.1 122.3 L 383.7 123.0 L 380.1 128.5 L 377.9 133.3 L 374.9 138.3 L 371.4 142.1 L 367.9 144.9 L 366.7 145.3 L 365.7 146.3 L 365.1 146.5 L 365.1 146.5 L 363.9 146.7 L 362.5 147.2 L 361.3 147.8 L 360.1 149.0 L 357.6 150.6 L 357.2 150.9 L 356.5 151.1 L 355.8 150.9 L 356.1 150.6 L 355.4 150.8 L 354.5 152.0 L 353.5 152.4 L 352.4 153.9 L 352.0 154.2 L 351.3 154.6 L 350.6 154.9 L 349.7 155.1 L 349.1 155.4 L 348.8 155.6 L 348.4 155.5 L 348.1 155.4 L 347.8 155.3 L 347.4 155.6 L 346.7 155.4 L 346.2 155.9 L 345.6 156.6 L 345.0 156.9 L 344.4 157.1 L 343.0 157.8 L 340.8 158.5 L 340.0 158.8 L 339.2 159.8 L 338.4 160.1 L 336.9 160.5 L 335.2 161.2 L 332.1 162.7 L 327.5 163.7 L 326.1 164.3 L 324.9 165.3 L 323.0 167.7 L 321.8 168.7 L 320.6 169.3 L 320.0 169.5 L 319.1 169.5 L 318.9 169.4 L 318.5 169.1 L 318.2 169.0 L 318.0 169.1 L 315.2 172.4 L 314.9 172.9 L 314.9 173.8 L 314.9 174.3 L 314.6 174.8 L 310.5 179.4 L 306.7 184.5 L 305.6 185.6 L 302.3 187.9 L 298.5 192.4 L 293.6 196.6 L 293.0 197.8 L 293.0 198.5 L 293.2 199.2 L 293.5 199.7 L 293.8 200.1 L 294.0 200.8 L 294.0 201.5 L 293.7 202.3 L 292.8 204.1 L 292.6 204.7 L 292.5 205.6 L 292.7 205.9 L 293.3 206.2 L 293.4 206.4 L 293.3 210.4 L 293.0 211.6 L 292.5 212.7 L 291.3 214.3 L 291.2 214.7 L 291.1 215.4 L 290.7 217.0 L 290.5 217.5 L 290.1 218.4 L 286.1 222.4 L 286.0 222.7 L 285.7 223.4 L 285.4 223.8 L 285.2 224.1 L 284.7 224.4 L 284.4 224.7 L 283.1 226.6 L 280.0 229.9 L 279.8 230.6 L 279.3 233.7 L 279.1 234.1 L 278.7 234.7 L 278.5 235.2 L 278.0 235.7 L 277.8 236.4 L 277.6 236.6 L 277.0 237.2 L 276.6 237.8 L 275.8 240.1 L 275.1 241.5 L 274.0 242.8 L 274.4 243.3 L 274.9 243.7 L 275.2 244.2 L 275.4 245.1 L 275.3 247.3 L 274.4 252.9 L 274.0 253.8 L 274.6 255.2 L 274.7 255.9 L 274.9 263.5 L 274.9 264.0 L 274.8 264.3 L 274.8 264.5 L 275.0 264.8 L 275.2 265.2 L 275.1 265.7 L 274.9 266.6 L 274.3 267.8 L 273.4 269.2 L 272.7 270.7 L 272.6 272.2 L 273.1 272.7 L 273.9 272.9 L 274.6 272.9 L 277.0 274.5 L 277.6 275.6 L 277.9 275.9 L 278.3 276.0 L 278.7 276.1 L 278.9 276.2 L 279.2 277.5 L 280.1 279.5 L 280.4 280.1 L 281.0 280.7 L 281.5 281.1 L 281.9 281.6 L 282.0 282.6 L 281.9 283.4 L 281.3 286.0 L 280.8 290.9 L 280.4 292.3 L 278.3 297.3 L 274.9 303.4 L 270.6 308.1 L 269.2 310.0 L 269.0 310.6 L 268.8 311.1 L 267.2 312.6 L 266.8 313.2 L 266.5 313.9 L 266.3 314.8 L 266.2 315.6 L 266.0 316.0 L 264.7 318.1 L 264.4 318.9 L 264.2 319.1 L 263.0 320.0 L 262.8 320.3 L 262.7 321.0 L 262.3 321.7 L 261.4 322.8 L 260.6 324.1 L 260.1 324.7 L 258.9 325.1 L 258.2 325.7 L 257.3 326.8 L 253.9 332.0 L 249.8 335.9 L 248.5 336.8 L 245.8 338.2 L 243.5 339.7 L 234.0 344.6 L 233.5 345.0 L 232.5 345.9 L 231.9 347.1 L 231.7 347.3 L 230.6 348.2 L 230.4 348.4 L 230.2 348.9 L 229.9 349.2 L 228.5 350.1 L 228.3 350.6 L 226.7 352.6 L 224.7 354.0 L 224.4 354.5 L 224.2 355.3 L 223.7 355.9 L 223.1 356.4 L 222.6 357.0 L 221.3 359.2 L 220.5 360.3 L 219.4 361.2 L 209.5 365.5 L 202.0 368.8 L 201.5 368.9 L 201.3 369.1 L 200.6 369.8 L 200.2 370.1 L 191.1 371.7 L 185.1 373.6 L 180.3 373.5 L 174.3 374.6 L 171.1 375.8 L 170.5 376.2 L 169.9 376.7 L 169.6 377.5 L 168.8 380.2 L 167.4 382.5 L 166.8 383.2 L 165.6 383.6 L 164.5 384.5 L 163.5 385.0 L 163.2 385.3 L 163.0 386.0 L 162.9 386.2 L 162.9 386.2 L 162.8 386.9 L 162.2 388.3 L 162.0 389.0 L 162.0 389.8 L 160.9 393.6 L 159.1 397.9 L 158.6 398.1 L 158.6 398.3 L 158.9 398.7 L 158.8 398.9 L 156.1 403.0 L 155.5 404.4 L 154.5 409.2 L 153.5 411.3 L 152.9 414.4 L 152.2 416.4 L 150.2 420.4 L 148.2 422.7 L 144.1 425.3 L 138.1 429.7 L 134.6 431.5 L 134.0 431.8 L 130.3 432.2 L 129.5 432.6 L 129.1 433.1 L 128.8 433.8 L 128.3 434.4 L 125.6 437.1 L 123.8 438.1 L 122.2 438.4 L 121.9 438.7 L 120.0 441.1 L 119.8 441.5 L 119.5 442.6 L 119.2 443.0 L 119.1 443.4 L 119.4 444.5 L 119.5 445.1 L 119.2 447.2 L 119.3 447.8 L 119.0 448.3 L 118.5 449.9 L 118.4 450.7 L 118.2 451.2 L 117.3 452.8 L 114.8 456.4 L 113.5 459.8 L 113.3 460.9 L 113.0 461.6 L 112.9 461.8 L 112.7 463.5 L 111.7 465.9 L 111.4 466.3 L 111.0 466.6 L 109.5 468.8 L 108.5 472.5 L 108.2 473.1 L 107.2 477.4 L 107.4 478.3 L 107.4 481.6 L 107.5 482.1 L 107.8 482.9 L 107.9 483.4 L 107.9 484.0 L 107.8 484.6 L 107.6 485.2 L 107.4 485.7 L 107.7 486.0 L 107.4 486.6 L 107.5 487.1 L 107.6 487.7 L 107.7 488.3 L 107.5 488.8 L 107.1 489.8 L 106.8 491.5 L 106.0 493.7 L 105.7 496.1 L 105.3 496.8 L 104.6 497.3 L 103.8 497.8 L 103.0 498.5 L 102.2 499.4 L 101.8 500.3 L 101.7 500.5 L 101.7 501.4 L 100.6 502.2 L 99.9 502.6 L 98.4 502.9 L 97.7 503.1 L 97.1 503.4 L 96.5 503.9 L 95.4 504.8 L 94.5 505.8 L 92.2 509.3 L 90.4 511.3 L 87.4 513.8 L 87.1 514.2 L 86.9 514.9 L 86.3 515.4 L 85.0 516.4 L 84.1 517.8 L 82.7 519.4 L 82.2 520.2 L 81.5 521.0 L 80.6 521.5 L 79.5 521.7 L 79.1 522.1 L 77.7 523.0 L 76.6 523.4 L 74.1 525.5 L 73.6 526.1 L 73.1 526.7 L 72.9 527.3 L 70.9 530.1 L 69.6 532.5 L 69.5 533.0 L 68.7 533.9 L 68.5 534.5 L 69.0 534.9 L 70.6 533.4 L 70.9 533.0 L 70.9 532.7 L 71.2 531.9 L 71.3 531.5 L 71.4 531.3 L 71.8 530.5 L 72.3 529.3 L 72.6 528.8 L 72.9 528.4 L 73.4 527.9 L 73.8 527.8 L 74.1 527.9 L 74.5 527.9 L 74.8 527.8 L 75.7 527.2 L 75.9 526.9 L 76.0 526.4 L 75.9 525.9 L 75.9 525.4 L 76.3 525.1 L 76.2 525.4 L 76.1 525.6 L 76.5 526.5 L 76.7 527.2 L 76.6 528.8 L 76.4 529.7 L 76.0 530.4 L 75.5 531.0 L 75.0 531.9 L 74.8 532.2 L 74.7 533.0 L 74.5 533.4 L 74.3 533.6 L 73.7 534.0 L 73.6 534.3 L 72.0 536.1 L 70.8 538.3 L 70.3 539.0 L 69.9 539.7 L 69.5 542.1 L 68.0 544.7 L 67.6 545.1 L 67.2 545.3 L 66.8 545.8 L 64.3 551.6 L 64.2 551.8 L 62.6 553.3 L 62.3 553.7 L 61.7 554.9 L 61.5 555.5 L 62.9 555.2 L 63.5 555.3 L 63.8 556.2 L 63.8 557.0 L 63.6 557.8 L 63.4 558.5 L 63.1 559.3 L 62.0 560.5 L 60.9 561.5 L 60.1 561.7 L 59.3 561.8 L 59.2 561.9 L 59.1 562.2 L 58.8 562.8 L 58.8 563.1 L 58.8 563.5 L 58.8 563.7 L 59.0 564.0 L 59.0 564.4 L 58.3 565.3 L 58.0 565.9 L 57.6 567.2 L 57.5 568.0 L 57.4 571.1 L 56.9 573.4 L 56.5 573.9 L 54.8 575.6 L 54.5 576.0 L 54.4 576.6 L 53.3 580.8 L 52.8 581.7 L 52.1 582.5 L 51.4 583.1 L 47.8 584.5 L 47.4 584.1 L 47.2 583.9 L 46.9 583.8 L 46.5 583.8 L 46.3 584.0 L 46.1 584.2 L 45.3 584.5 L 44.9 585.0 L 44.4 586.2 L 44.2 586.4 L 43.6 586.8 L 43.4 587.0 L 43.0 587.9 L 43.0 588.1 L 42.8 588.4 L 41.6 589.7 L 38.1 596.9 L 37.8 597.7 L 37.6 599.2 L 36.9 600.7 L 36.8 601.7 L 36.6 602.3 L 36.7 602.5 L 37.1 602.8 L 37.3 603.0 L 37.3 603.4 L 37.2 603.9 L 37.1 604.3 L 36.6 605.3 L 36.5 606.1 L 36.6 607.4 L 36.5 609.0 L 35.1 614.3 L 35.0 615.2 Z" fill="none" stroke="#3B5468" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Regional Labels -->
+  <text x="192.1" y="465.3" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" fill="#3B5468" letter-spacing="0.28em" opacity="0.75">SAHARA MAROCAIN</text>
+  
+  <circle cx="162.1" cy="405.3" r="2" fill="#8A837B"/>
+  <text x="170.1" y="409.3" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8A837B" letter-spacing="0.12em">LAÂYOUNE</text>
+
+  <circle cx="70.9" cy="532.4" r="2" fill="#8A837B"/>
+  <text x="78.9" y="536.4" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8A837B" letter-spacing="0.12em">DAKHLA</text>
+
+  <circle cx="32.7" cy="636.2" r="2" fill="#8A837B"/>
+  <text x="40.7" y="640.2" font-family="JetBrains Mono, monospace" font-size="8" fill="#8A837B" letter-spacing="0.12em">LAGOUIRA · 20.85°N</text>
+
+  <!-- Network Inter-agency Routes -->
+  <g class="map__routes" stroke="#D01919" stroke-width="1" stroke-dasharray="4 4" opacity="0.5">
+    <line x1="407.9" y1="68.3" x2="435.7" y2="138.5"/>
+    <line x1="407.9" y1="68.3" x2="349.3" y2="157.0"/>
+    <line x1="349.3" y1="157.0" x2="435.7" y2="138.5"/>
+    <line x1="349.3" y1="157.0" x2="318.9" y2="170.6"/>
+    <line x1="349.3" y1="157.0" x2="336.3" y2="233.9"/>
+    <line x1="318.9" y1="170.6" x2="336.3" y2="233.9"/>
+    <line x1="336.3" y1="233.9" x2="162.1" y2="405.3" stroke="#3B5468" stroke-dasharray="2 4" opacity="0.4"/>
+    <line x1="162.1" y1="405.3" x2="70.9" y2="532.4" stroke="#3B5468" stroke-dasharray="2 4" opacity="0.4"/>
+  </g>
+
+  <!-- City Static Labels -->
+  <g class="map__city-labels" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#14100E">
+    <text x="415.9" y="72.3">TANGER</text>
+    <text x="445.7" y="142.5">FÈS</text>
+    <text x="219.3" y="151.0" fill="#D01919" font-weight="700">CASABLANCA <tspan font-size="8" font-weight="500" fill="#3B5468">(SIÈGE &amp; OULFA)</tspan></text>
+    <text x="250.89999999999998" y="184.6">EL JADIDA</text>
+    <text x="346.3" y="237.9">MARRAKECH</text>
+  </g>
+</svg>
+      <!-- Pins positioned on authentic map (DOM order 0..5) -->
+      <div class="map__pin" style="left: 58.2%; top: 22.4%;"><span class="map__pin__lbl">CASABLANCA · SIÈGE</span></div>
+      <div class="map__pin" style="left: 57.8%; top: 22.5%;"><span class="map__pin__lbl">CASABLANCA · OULFA</span></div>
+      <div class="map__pin" style="left: 72.6%; top: 19.8%;"><span class="map__pin__lbl">FÈS</span></div>
+      <div class="map__pin" style="left: 56.0%; top: 33.4%;"><span class="map__pin__lbl">MARRAKECH</span></div>
+      <div class="map__pin" style="left: 68.0%; top: 9.8%;"><span class="map__pin__lbl">TANGER</span></div>
+      <div class="map__pin" style="left: 53.2%; top: 24.4%;"><span class="map__pin__lbl">EL JADIDA</span></div>
+    </div>
+
+    <div class="agency-list">
+      <div class="agency">
+        <div class="agency__num">/01 · SIÈGE</div>
+        <div>
+          <h3 class="agency__name">Casablanca — Siège</h3>
+          <div class="agency__addr">Lot N°119 Zone Industrielle · Mediouna</div>
+          <div class="agency__contact">05 22 33 85 01 / 03 · <a href="mailto:casa@labocontrol.ma">casa@labocontrol.ma</a></div>
+        </div>
+        <div class="agency__arrow">→</div>
+      </div>
+      <div class="agency">
+        <div class="agency__num">/02</div>
+        <div>
+          <h3 class="agency__name">Casablanca — Oulfa</h3>
+          <div class="agency__addr">N°59, Rue 59 · Azhari I Oulfa</div>
+          <div class="agency__contact">05 22 93 45 56 · <a href="mailto:casa@labocontrol.ma">casa@labocontrol.ma</a></div>
+        </div>
+        <div class="agency__arrow">→</div>
+      </div>
+      <div class="agency">
+        <div class="agency__num">/03</div>
+        <div>
+          <h3 class="agency__name">Fès</h3>
+          <div class="agency__addr">N°21, lotissement 30 · Alazrak Zohour</div>
+          <div class="agency__contact">05 35 61 95 95 · <a href="mailto:contact@labocontrol.ma">contact@labocontrol.ma</a></div>
+        </div>
+        <div class="agency__arrow">→</div>
+      </div>
+      <div class="agency">
+        <div class="agency__num">/04</div>
+        <div>
+          <h3 class="agency__name">Marrakech</h3>
+          <div class="agency__addr">Quartier industriel Sidi Ghanem</div>
+          <div class="agency__contact">05 24 33 55 00 · <a href="mailto:marrakech@labocontrol.ma">marrakech@labocontrol.ma</a></div>
+        </div>
+        <div class="agency__arrow">→</div>
+      </div>
+      <div class="agency">
+        <div class="agency__num">/05</div>
+        <div>
+          <h3 class="agency__name">Tanger</h3>
+          <div class="agency__addr">Zone Franche · Tanger Med</div>
+          <div class="agency__contact">05 39 38 55 22 · <a href="mailto:tanger@labocontrol.ma">tanger@labocontrol.ma</a></div>
+        </div>
+        <div class="agency__arrow">→</div>
+      </div>
+      <div class="agency">
+        <div class="agency__num">/06</div>
+        <div>
+          <h3 class="agency__name">El Jadida</h3>
+          <div class="agency__addr">Route de Marrakech · El Jadida</div>
+          <div class="agency__contact">05 23 34 22 11 · <a href="mailto:jadida@labocontrol.ma">jadida@labocontrol.ma</a></div>
+        </div>
+        <div class="agency__arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news" data-screen-label="08 Actualités">
+  <div class="section__head">
+    <div>
+      <div class="section__index">06 — ACTUALITÉS</div>
+      <h2 class="section__title reveal">Sur le <em>terrain.</em></h2>
+    </div>
+    <a href="#" class="mono" style="color: var(--accent);">TOUTES LES ACTUALITÉS →</a>
+  </div>
+
+  <div class="news__grid">
+    <a href="#" class="news-card reveal">
+      <div class="news-card__img" data-tag="CHANTIER"></div>
+      <div class="news-card__body">
+        <div class="news-card__date">MARS 2026 · CASABLANCA</div>
+        <h3 class="news-card__title">Sondages profonds pour la nouvelle tour Anfa Place</h3>
+        <div class="news-card__more">LIRE L'ARTICLE →</div>
+      </div>
+    </a>
+    <a href="#" class="news-card reveal reveal--delay-1">
+      <div class="news-card__img b" data-tag="LABORATOIRE"></div>
+      <div class="news-card__body">
+        <div class="news-card__date">FÉVRIER 2026 · MARRAKECH</div>
+        <h3 class="news-card__title">Extension du plateau technique granulats à Marrakech</h3>
+        <div class="news-card__more">LIRE L'ARTICLE →</div>
+      </div>
+    </a>
+    <a href="#" class="news-card reveal reveal--delay-2">
+      <div class="news-card__img c" data-tag="ÉTUDE D'IMPACT"></div>
+      <div class="news-card__body">
+        <div class="news-card__date">JANVIER 2026 · TANGER</div>
+        <h3 class="news-card__title">Étude d'impact environnemental — Port Tanger Med III</h3>
+        <div class="news-card__more">LIRE L'ARTICLE →</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CAREERS -->
+<section class="careers" data-screen-label="09 Carrières">
+  <div class="careers__inner">
+    <div>
+      <div class="section__index" style="color: var(--accent-2);">07 — CARRIÈRES</div>
+      <h2 class="careers__title reveal">Bâtissez votre carrière <em>là où ça compte.</em></h2>
+      <p class="careers__desc reveal reveal--delay-1">Nous recrutons des ingénieurs, géotechniciens, chefs de chantier et laborantins passionnés par le terrain. Formation continue, mobilité entre agences, projets d'envergure nationale.</p>
+      <div style="margin-top: 32px;">
+        <a href="carrieres.html" class="btn btn--primary">Voir nos offres <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10m-4-4 4 4-4 4"/></svg></a>
+      </div>
+    </div>
+    <div class="careers__stats">
+      <div class="careers__stat"><div class="careers__stat__num">120<span style="font-size:0.4em; color:var(--accent-2);">+</span></div><div class="careers__stat__lbl">Collaborateurs</div></div>
+      <div class="careers__stat"><div class="careers__stat__num">8</div><div class="careers__stat__lbl">Postes ouverts</div></div>
+      <div class="careers__stat"><div class="careers__stat__num">40h</div><div class="careers__stat__lbl">Formation / an / personne</div></div>
+      <div class="careers__stat"><div class="careers__stat__num">5</div><div class="careers__stat__lbl">Villes d'implantation</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" data-screen-label="10 Contact">
+  <div class="section__head">
+    <div>
+      <div class="section__index">08 — CONTACT</div>
+      <h2 class="section__title reveal">Un projet ? <em>Un doute sur un sol ?</em></h2>
+    </div>
+    <p class="section__lead reveal reveal--delay-1">Envoyez-nous les détails de votre chantier — nous revenons vers vous sous 24h avec un devis clair et un planning d'intervention.</p>
+  </div>
+
+  <div class="contact__grid">
+    <form class="contact__form">
+      <div class="field--row">
+        <div class="field"><label>Nom complet</label><input required></div>
+        <div class="field"><label>Société</label><input></div>
+      </div>
+      <div class="field--row">
+        <div class="field"><label>Email</label><input type="email" required></div>
+        <div class="field"><label>Téléphone</label><input type="tel"></div>
+      </div>
+      <div class="field"><label>Type d'intervention</label>
+        <select>
+          <option>Étude géotechnique</option>
+          <option>Expertise / renforcement</option>
+          <option>Essais sur béton</option>
+          <option>Analyse granulats</option>
+          <option>Étude d'impact environnemental</option>
+          <option>Étude d'impact &amp; hydrogéologie</option>
+        </select>
+      </div>
+      <div class="field"><label>Décrivez votre projet</label><textarea rows="4" placeholder="Localisation, superficie, calendrier prévu..."></textarea></div>
+      <button class="btn btn--primary" type="submit">Envoyer la demande
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10m-4-4 4 4-4 4"/></svg>
+      </button>
+    </form>
+    <div class="contact__info">
+      <div class="info-block"><div class="info-block__lbl">SIÈGE · CASABLANCA</div><div class="info-block__val">Lot N°119 Zone Industrielle, Mediouna</div></div>
+      <div class="info-block"><div class="info-block__lbl">TÉLÉPHONE</div><div class="info-block__val">+212 5 22 33 85 01</div></div>
+      <div class="info-block"><div class="info-block__lbl">EMAIL</div><div class="info-block__val"><a href="mailto:contact@labocontrol.ma">contact@labocontrol.ma</a></div></div>
+      <div class="info-block"><div class="info-block__lbl">HORAIRES</div><div class="info-block__val">Lundi — Vendredi · 08:30 → 18:00</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="../assets/logo-light.png" alt="Labocontrol" style="height: 40px;">
+      <p>Laboratoire d'étude, d'essais et de contrôle — qualifié par l'État sous le numéro LAB/03 et accrédité NM ISO/CEI 17025. Casablanca · Fès · Marrakech · Tanger · El Jadida.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 3a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 8h5v10H3V8zm7 0h4.7v1.4h.1c.7-1.2 2.2-1.7 3.4-1.7 3.5 0 4.2 2.3 4.2 5.3V18h-5v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V18h-5V8z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M20 10a10 10 0 10-11.6 9.9v-7H5.9V10h2.5V7.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5H13c-1.3 0-1.7.8-1.7 1.6V10h2.9l-.5 2.9h-2.4v7A10 10 0 0020 10z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="15" height="15" rx="4"/><circle cx="10" cy="10" r="4"/><circle cx="14.5" cy="5.5" r="0.8" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M19.6 5.9c-.2-.9-.9-1.6-1.8-1.8C16.2 3.7 10 3.7 10 3.7s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C0 7.5 0 10 0 10s0 2.5.4 4.1c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.1.4-4.1s0-2.5-.4-4.1zM8 13V7l5.2 3L8 13z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="services/geotechnique.html">Géotechnique</a>
+      <a href="services/expertises.html">Expertises</a>
+      <a href="services/beton.html">Essais béton</a>
+      <a href="services/granulats.html">Granulats</a>
+      <a href="services/impact.html">Environnement &amp; Eau</a>
+    </div>
+    <div class="footer__col">
+      <h4>Société</h4>
+      <a href="about.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="demarche.html">Démarche qualité</a>
+      <a href="clients.html">Clients</a>
+      <a href="carrieres.html">Carrières</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:contact@labocontrol.ma">contact@labocontrol.ma</a>
+      <a href="tel:+212522338501">+212 5 22 33 85 01</a>
+      <a href="agences.html">Nos 6 agences</a>
+      <a href="contact.html">Formulaire de devis</a>
+    </div>
+    <div class="footer__col footer__col--wide">
+      <h4>Newsletter · trimestrielle</h4>
+      <p class="footer__nl">Recevez nos actualités, publications techniques et retours de chantier — quatre fois par an, jamais de spam.</p>
+      <form class="footer__nl-form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.querySelector('.msg').textContent='Merci ! On garde le contact.';">
+        <input type="email" placeholder="votre@email.ma" required>
+        <button type="submit" aria-label="S'inscrire"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10m-4-4 4 4-4 4"/></svg></button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 LABOCONTROL — TOUS DROITS RÉSERVÉS</span>
+    <span class="footer__legal">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+    </span>
+    <span>QUALIFIÉ LAB/03 · ACCRÉDITÉ NM ISO/CEI 17025</span>
+  </div>
+</footer>
+
+
+<a href="tel:+212522338501" class="floating-call" aria-label="Appeler Labocontrol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 05 22 33 85 01</a>
+
+
+<script src="app.js"></script>
+</body>
+</html>
