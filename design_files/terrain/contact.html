@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-.ct-hero{ padding: 180px var(--pad) 60px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow: hidden;}
-.ct-hero h1{ font-family: var(--serif); font-size: clamp(48px, 7vw, 120px); line-height: 0.95; margin: 12px 0 24px; letter-spacing: -0.03em;}
+.ct-hero{ padding: 160px var(--pad) 60px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow: hidden;}
+.ct-hero h1{ font-family: var(--serif); font-size: clamp(36px, 5.5vw, 92px); line-height: 1.02; margin: 12px 0 24px; letter-spacing: -0.025em; word-break: break-word;}
 .ct-hero h1 em{ font-style: italic; color: var(--accent); font-weight: 300;}
 .ct-hero p{ max-width: 620px; font-size: 18px; color: var(--ink-2); line-height: 1.55;}
 .ct-main{ padding: 100px 0; }
@@ -26,6 +26,13 @@
 .ct-quick-card__value a{ color: var(--white); border-bottom: 1px solid transparent; transition: border-color .2s;}
 .ct-quick-card__value a:hover{ border-color: var(--accent-2);}
 @media(max-width: 900px){ .ct-main__grid, .ct-quick__grid{ grid-template-columns: 1fr;}}
+@media(max-width: 768px){
+  .ct-hero{ padding: 100px var(--pad) 36px; }
+  .ct-hero h1{ font-size: clamp(28px, 8vw, 42px); line-height: 1.08; }
+  .ct-hero p{ font-size: 15px; }
+  .ct-main{ padding: 60px 0; }
+  .ct-quick{ padding: 60px 0; }
+}
 </style>
 </head>
 <body data-screen-label="Terrain — Contact">

@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-.clients-hero{ padding: 180px var(--pad) 100px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow:hidden;}
-.clients-hero h1{ font-family: var(--serif); font-size: clamp(48px, 7vw, 120px); line-height: 0.95; margin: 12px 0 24px; letter-spacing: -0.03em;}
+.clients-hero{ padding: 160px var(--pad) 80px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow:hidden;}
+.clients-hero h1{ font-family: var(--serif); font-size: clamp(36px, 5.5vw, 92px); line-height: 1.02; margin: 12px 0 24px; letter-spacing: -0.025em; word-break: break-word;}
 .clients-hero h1 em{ font-style: italic; color: var(--accent); font-weight: 300;}
 .clients-hero p{ max-width: 620px; font-size: 18px; color: var(--ink-2); line-height: 1.55;}
 .client-group{ padding: 100px 0; border-bottom: 1px solid var(--line); }
@@ -25,6 +25,16 @@
 .client-card__mark{ font-family: var(--serif); font-size: 40px; color: var(--muted); letter-spacing: -0.02em; transition: color .3s;}
 .client-card__name{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
 @media(max-width: 900px){ .client-grid{ grid-template-columns: repeat(2, 1fr);} }
+@media(max-width: 768px){
+  .clients-hero{ padding: 100px var(--pad) 36px; }
+  .clients-hero h1{ font-size: clamp(28px, 8vw, 42px); line-height: 1.08; }
+  .clients-hero p{ font-size: 15px; }
+  .client-group{ padding: 60px 0; }
+  .client-card{ padding: 20px 16px; }
+}
+@media(max-width: 440px){
+  .client-grid{ grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body data-screen-label="Terrain — Clients">

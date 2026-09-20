@@ -9,9 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-.about-hero{ padding: 180px var(--pad) 100px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow:hidden;}
+.about-hero{ padding: 160px var(--pad) 80px; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; overflow:hidden;}
 .about-hero__grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items:end;}
-.about-hero__title{ font-family: var(--serif); font-size: clamp(48px, 7vw, 120px); line-height: 0.95; letter-spacing: -0.03em; margin: 16px 0 0;}
+.about-hero__title{ font-family: var(--serif); font-size: clamp(36px, 5.5vw, 92px); line-height: 1.02; letter-spacing: -0.025em; margin: 16px 0 0; word-break: break-word;}
 .about-hero__title em{ font-style: italic; color: var(--accent); font-weight: 300;}
 .about-hero__intro{ font-size: 20px; line-height: 1.55; color: var(--ink-2); max-width: 520px; padding-bottom: 12px;}
 .manifesto{ padding: 120px 0; }
@@ -33,7 +33,15 @@
 .value__num{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; color: var(--blue);}
 .value__title{ font-family: var(--serif); font-size: 32px; margin: 12px 0 12px; line-height: 1.15; letter-spacing: -0.01em;}
 .value__desc{ font-size: 15px; color: var(--ink-2); line-height: 1.55;}
-@media(max-width: 900px){ .about-hero__grid, .timeline__grid, .values__grid{ grid-template-columns: 1fr;}}
+@media(max-width: 900px){ .about-hero__grid, .timeline__grid, .values__grid{ grid-template-columns: 1fr; gap: 36px;}}
+@media(max-width: 768px){
+  .about-hero{ padding: 100px var(--pad) 36px; }
+  .about-hero__title{ font-size: clamp(28px, 8vw, 42px); line-height: 1.08; }
+  .about-hero__intro{ font-size: 15px; }
+  .manifesto{ padding: 60px 0; }
+  .timeline{ padding: 60px 0; }
+  .values{ padding: 60px 0; }
+}
 </style>
 </head>
 <body data-screen-label="Terrain — À propos">

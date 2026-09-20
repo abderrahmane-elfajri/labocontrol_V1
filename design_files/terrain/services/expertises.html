@@ -79,8 +79,10 @@
 @media(max-width: 1000px){ .sd-hero__grid, .sd-intro, .sd-process__grid, .sd-deliverable__grid{ grid-template-columns: 1fr;} .sd-more__grid{ grid-template-columns: repeat(2, 1fr);} .sd-more-card:nth-child(2){ border-right: 0;}}
 
 @media(max-width: 600px){
-  .sd-hero { padding: 120px var(--pad) 60px; }
+  .sd-hero { padding: 100px var(--pad) 40px; }
+  .sd-hero h1 { font-size: clamp(28px, 8vw, 42px); line-height: 1.08; word-break: break-word; }
   .sd-norms, .sd-process, .sd-deliverable, .sd-more { padding: 60px var(--pad); }
+  .sd-norm-grid { grid-template-columns: 1fr; }
   .sd-step { grid-template-columns: 1fr; gap: 12px; }
   .sd-step__num { font-size: 32px; }
   .sd-more__grid { grid-template-columns: 1fr; }

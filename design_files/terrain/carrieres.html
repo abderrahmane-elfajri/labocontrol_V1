@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-.car-hero{ padding: 180px var(--pad) 100px; background: var(--ink); color: var(--white); position: relative; overflow:hidden;}
-.car-hero h1{ font-family: var(--serif); font-size: clamp(48px, 7vw, 120px); line-height: 0.95; margin: 12px 0 24px; letter-spacing: -0.03em; color: var(--white);}
+.car-hero{ padding: 160px var(--pad) 80px; background: var(--ink); color: var(--white); position: relative; overflow:hidden;}
+.car-hero h1{ font-family: var(--serif); font-size: clamp(36px, 5.5vw, 92px); line-height: 1.02; margin: 12px 0 24px; letter-spacing: -0.025em; color: var(--white); word-break: break-word;}
 .car-hero h1 em{ font-style: italic; color: var(--accent-2); font-weight: 300;}
 .car-hero p{ max-width: 620px; font-size: 18px; color: rgba(255,255,255,0.75); line-height: 1.55;}
 .car-hero .section__index{ color: var(--accent-2);}
@@ -22,7 +22,6 @@
 .car-stat__lbl{ margin-top: 8px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase;}
 .jobs{ padding: 100px 0; }
 .jobs__list{ padding: 0 var(--pad); border-top: 1px solid var(--line);}
-.job{ display: grid; grid-template-columns: 120px 140px 1fr 120px 40px; gap: 24px; align-items: center; padding: 32px 0; border-bottom: 1px solid var(--line); cursor: pointer; transition: padding .3s, background .3s;}
 .job{ position: relative; display: grid; grid-template-columns: 120px 140px 1fr 120px 40px; gap: 24px; align-items: center; padding: 32px 0; border-bottom: 1px solid var(--line); cursor: pointer; transition: padding .3s, background .3s;}
 .job:hover{ padding-left: 24px; padding-right: 24px; background: var(--bg-2);}
 .job__loc{ font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--blue);}
@@ -32,6 +31,16 @@
 .job__arrow{ font-size: 20px; color: var(--ink); transition: transform .3s, color .3s;}
 .job:hover .job__arrow{ transform: translateX(6px); color: var(--accent);}
 @media(max-width: 900px){ .car-stats{ grid-template-columns: repeat(2, 1fr);} .car-stat:nth-child(2){ border-right: 0;} .job{ grid-template-columns: 1fr; gap: 8px; padding: 24px 0;} .job__arrow{ position: absolute; right: 0;}}
+@media(max-width: 768px){
+  .car-hero{ padding: 100px var(--pad) 36px; }
+  .car-hero h1{ font-size: clamp(28px, 8vw, 42px); line-height: 1.08; }
+  .car-hero p{ font-size: 15px; }
+  .car-stats{ padding: 40px var(--pad); }
+  .jobs{ padding: 60px 0; }
+  .perks{ padding: 60px 0; }
+  .perks__grid{ grid-template-columns: 1fr; }
+  .perk{ border-right: 0; border-bottom: 1px solid var(--line); }
+}
 .perks{ padding: 100px 0; background: var(--bg-2); border-top: 1px solid var(--line);}
 .perks__grid{ padding: 0 var(--pad); display:grid; grid-template-columns: repeat(3, 1fr); gap: 0;}
 .perk{ border-right: 1px solid var(--line); padding: 32px 24px;}
